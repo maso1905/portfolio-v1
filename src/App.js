@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './pages';
+import { ThemeProvider } from "styled-components";
+import { darkMode, lightMode, GlobalStyle } from "./themes";
 
 function App() {
+  const [theme] = useState("dark");
+  /*const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };*/
+  //<button onClick={() => themeToggler}>Change mode</button>
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <ThemeProvider theme={theme === "light" ? lightMode : darkMode}>
+          <GlobalStyle />
+          <Home />
+        </ThemeProvider>
+      </BrowserRouter>
+    </>
   );
 }
 
