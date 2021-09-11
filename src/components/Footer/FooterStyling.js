@@ -11,6 +11,7 @@ export const Nav = styled.nav`
     bottom: 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    padding-bottom: 5%;
 `;
 export const NavContainer = styled.div`
     display: flex;
@@ -19,10 +20,11 @@ export const NavContainer = styled.div`
     align-items: center;
     width: 100%;
     max-width: 1800px;
+    text-align: center;
 
     p{
-        font-size: 80%;
-        cursor: pointer;
+        font-size: 90%;
+        max-width: 200px;
     }
 `;
 
@@ -41,7 +43,7 @@ export const SocialIcons = styled.ul`
     align-items: center;
 `
 export const IconItem = styled.li`
-    margin: 5%;
+    margin: 10px;
 `
 export const Icon = styled.a`
     fill: ${(props) => props.theme.fontColor};

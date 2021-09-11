@@ -7,8 +7,7 @@ export const Section = styled.section`
     height: auto;
     margin-bottom: 15%;
     padding-top: 90px;
-    padding-left: 10%;
-    padding-right: 10%;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px){
         padding-left: 5%;
@@ -27,8 +26,6 @@ export const Row = styled.div`
     align-items: stretch;
     @media screen and (max-width: 768px){
         border-top: 1px solid ${(props) => props.theme.accentColor};
-        border-left: 1px solid ${(props) => props.theme.accentColor};
-        border-top-left-radius: 6px;
     }
 `
 export const Col1 = styled.div`
@@ -46,7 +43,7 @@ export const InfoWrapper = styled.div`
     border-top-left-radius: 6px;
     padding: 2% 0 5% 5%;
     @media screen and (max-width: 768px){
-        padding: 2% 5% 5% 5%;
+        padding: 2%;
         border: none;
     }
 `

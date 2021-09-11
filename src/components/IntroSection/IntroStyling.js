@@ -5,8 +5,6 @@ export const Section = styled.section`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-left: 10%;
-    padding-right: 10%;
 `
 export const Content = styled.div`
     display: flex;
@@ -14,18 +12,33 @@ export const Content = styled.div`
     justify-content: center;
     align-content: center;
     max-width: 1100px;
+    @media screen and (max-width: 768px){
+        padding: 5%;  
+    }
+    .small-welcome{
+        opacity: 0;
+        font-size: 14px;
+        color: ${(props) => props.theme.accentColor};
+        animation: section-slide-up .6s forwards 1.2s ease-in-out;
+    }
     h1{
         opacity: 0;
-        animation: section-slide-up .6s forwards 1s ease-in-out;
+        animation: section-slide-up .6s forwards 2.2s ease-in-out;
     }
     h2{
         opacity: 0;
-        animation: section-slide-up .6s forwards 2s ease-in-out;
+        animation: section-slide-up .6s forwards 3.2s ease-in-out;
     }
     p{
         opacity: 0;
         max-width: 700px;
-        animation: section-slide-up .6s forwards 4.4s ease-in-out;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        animation: section-slide-up .6s forwards 4.2s ease-in-out;
+        @media screen and (max-width: 768px){
+            padding-top: 0;
+            max-width: 200px;
+        }
     }
     @keyframes section-slide-up{
         from{
@@ -41,7 +54,7 @@ export const Content = styled.div`
     .devAnim{
         display: inline-block;
         transform-origin: bottom left;
-        animation: developer-break 1s forwards 3s ease-in-out, developer-fall .4s forwards 4s ease-in-out, developer-reemerge .6s forwards 7s ease-in-out;
+        animation: developer-break 1s forwards 5.2s ease-in-out, developer-fall .4s forwards 6.2s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
     }
     @keyframes developer-break{
         0% { transform: rotate(0deg) }

@@ -13,10 +13,17 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
     background: ${(props) => props.theme.body};
     box-shadow: ${({scrollNav}) => (scrollNav ? '0 6px 2px -2px rgb(16, 15, 41);' : 'transparent')};
+    @media screen and (max-width: 768px){
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 55px;
+        margin-top: -55px;
+    }
 `;
 export const NavContainer = styled.div`
     display: flex;
@@ -69,6 +76,16 @@ export const MobileMenu = styled.div`
 export const Bars = styled(RiMenu3Line)`
     margin-left: auto;
     cursor: pointer;
+    opacity: 0;
+    animation: slide-logo .4s forwards 4.6s ease-in-out;
+    @keyframes slide-logo{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 `;
 export const NavMenu = styled.ol`
     display: flex;

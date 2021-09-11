@@ -4,16 +4,14 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;    
     padding-bottom: 10%;
     height: auto;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px){
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 30%;
+        padding-top: 10%;
         padding-bottom: 30%;
     }
 `
@@ -32,6 +30,11 @@ export const Row1 = styled.div`
     border-right: 1px solid ${(props) => props.theme.accentColor};
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    @media screen and (max-width: 768px){
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
 `
 export const Row2 = styled.div`
     display: grid;

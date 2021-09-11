@@ -4,10 +4,7 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    padding-top: 90px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px){
         padding-left: 5%;
@@ -59,10 +56,11 @@ export const ProjectCard = styled.div`
         }
     }
     @media screen and (max-width: 768px){
-        height: 700px;
+        height: 500px;
         margin-top: 1%;
         &:hover{
-            height: 700px;
+            transform: scale(.95);
+            height: 550px;
         }
     }
 `

@@ -14,7 +14,6 @@ export const darkMode = {
     accentColor: '#F9FF56'
 };
 
-
 export const GlobalStyle = createGlobalStyle`  
     *{
         padding: 0;
@@ -23,15 +22,12 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
         text-decoration: none;
     }
-
     body{
         background-color: ${(props) => props.theme.body};
         color: ${(props) => props.theme.fontColor};
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.4;
-        overflow-x: hidden;
     }
-
     h1{ font-size: 50px;}
     h2{ font-size: 32px;}
     h3{ font-size: 20px;}
@@ -47,26 +43,20 @@ export const GlobalStyle = createGlobalStyle`
 
     /* Mobile */
     @media screen and (max-width: 375px) and (min-width: 320px){
-        h1{ font-size: 30px;}
-        h2{ 
-            font-size: 26px;
-            margin-top: 5%;
+        h1{ font-size: 32px;}
+        h2, span{ 
+            font-size: 28px;
         }
-        p{ margin-top: 5%;}
         p, 
         a{ font-size: 14px;}
     }
     /* Tablet */
     @media screen and (max-width: 768px) and (min-width: 376px){
         h1{ font-size: 36px;}
-        h2{ 
-            font-size: 24px;
-            margin-top: 2%;
-        }
+        h2{ font-size: 24px; }
         p, 
-        a{ font-size: 16px;}
+        a{ font-size: 14px;}
     }
-
     /* Y-Scrollbar */
     ::-webkit-scrollbar {
         width: 6px;

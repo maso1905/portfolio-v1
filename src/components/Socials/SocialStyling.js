@@ -7,8 +7,7 @@ export const Wrap = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 0;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+
     position: fixed;
     bottom: 0;
     width: 100%;
