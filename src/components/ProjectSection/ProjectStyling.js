@@ -5,6 +5,8 @@ export const Section = styled.section`
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 
     @media screen and (max-width: 768px){
         padding-left: 5%;
@@ -23,6 +25,7 @@ export const ProjectWrapper = styled.div`
     grid-gap: 2%;
     padding-right: 2.5%;
     align-items: center;
+    overflow-y: hidden;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -49,7 +52,7 @@ export const ProjectCard = styled.div`
         transform: scale(1.05);
         transition: .4s ease-in-out;
         border: .5px solid ${(props) => props.theme.accentColor};
-        height: 450px;
+        height: 500px;
 
         .prjtechs{
             visibility: visible;
@@ -59,7 +62,6 @@ export const ProjectCard = styled.div`
         height: 500px;
         margin-top: 1%;
         &:hover{
-            transform: scale(.95);
             height: 550px;
         }
     }

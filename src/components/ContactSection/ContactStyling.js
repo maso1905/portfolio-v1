@@ -4,7 +4,10 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
     padding-bottom: 10%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     height: auto;
     overflow-x: hidden;
 

@@ -5,7 +5,9 @@ export const Section = styled.section`
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-bottom: 15%;
+    padding-bottom: 10%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     padding-top: 90px;
     overflow-x: hidden;
 

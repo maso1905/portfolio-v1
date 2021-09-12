@@ -38,7 +38,7 @@ export const NavLogo = styled.div`
     align-items: center;
     width: 100%;
     opacity: 0;
-    animation: slide-logo 1.4s forwards 4.6s ease-in-out;
+    animation: slide-logo 1.4s forwards 5.6s ease-in-out;
     @keyframes slide-logo{
         from{
             opacity: 0;
@@ -77,7 +77,7 @@ export const Bars = styled(RiMenu3Line)`
     margin-left: auto;
     cursor: pointer;
     opacity: 0;
-    animation: slide-logo .4s forwards 4.6s ease-in-out;
+    animation: slide-logo .4s forwards 5.6s ease-in-out;
     @keyframes slide-logo{
         from{
             opacity: 0;
@@ -102,16 +102,16 @@ export const NavItem = styled.li`
     opacity: 0;
 
     &:nth-of-type(1){
-        animation: slide-menu-items .4s forwards 4.6s ease-in-out
+        animation: slide-menu-items .4s forwards 6.6s ease-in-out
     }
     &:nth-of-type(2){
-        animation: slide-menu-items .4s forwards 4.8s ease-in-out
+        animation: slide-menu-items .4s forwards 6.8s ease-in-out
     }
     &:nth-of-type(3){
-        animation: slide-menu-items .4s forwards 5s ease-in-out
+        animation: slide-menu-items .4s forwards 7s ease-in-out
     }
     &:nth-of-type(4){
-        animation: slide-menu-items .4s forwards 5.2s ease-in-out
+        animation: slide-menu-items .4s forwards 7.2s ease-in-out
     }
     @keyframes slide-menu-items{
         from{

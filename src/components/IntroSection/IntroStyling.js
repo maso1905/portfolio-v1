@@ -19,22 +19,22 @@ export const Content = styled.div`
         opacity: 0;
         font-size: 14px;
         color: ${(props) => props.theme.accentColor};
-        animation: section-slide-up .6s forwards 1.2s ease-in-out;
+        animation: section-slide-up .6s forwards 1.6s ease-in-out;
     }
     h1{
         opacity: 0;
-        animation: section-slide-up .6s forwards 2.2s ease-in-out;
+        animation: section-slide-up .6s forwards 2.6s ease-in-out;
     }
     h2{
         opacity: 0;
-        animation: section-slide-up .6s forwards 3.2s ease-in-out;
+        animation: section-slide-up .6s forwards 3.6s ease-in-out;
     }
     p{
         opacity: 0;
         max-width: 700px;
         margin-top: 5%;
         margin-bottom: 3%;
-        animation: section-slide-up .6s forwards 4.2s ease-in-out;
+        animation: section-slide-up .6s forwards 4.6s ease-in-out;
         @media screen and (max-width: 768px){
             padding-top: 0;
             max-width: 200px;
