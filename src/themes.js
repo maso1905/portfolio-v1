@@ -25,10 +25,20 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background-color: ${(props) => props.theme.body};
         color: ${(props) => props.theme.fontColor};
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.4;
+        line-height: 1.5;
+        font-family: 'Lato', sans-serif;
+        cursor: auto;
     }
-    h1{ font-size: 50px;}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        font-family: 'Open Sans', sans-serif;    
+    }
+    
+    h1{ font-size: 64px;}
     h2{ font-size: 32px;}
     h3{ font-size: 20px;}
     h4{ font-size: 16px;}
@@ -43,9 +53,9 @@ export const GlobalStyle = createGlobalStyle`
 
     /* Mobile */
     @media screen and (max-width: 375px) and (min-width: 320px){
-        h1{ font-size: 32px;}
-        h2, span{ 
-            font-size: 28px;
+        h1{ font-size: 30px;}
+        h2{ 
+            font-size: 26px;
         }
         p, 
         a{ font-size: 14px;}
@@ -53,9 +63,9 @@ export const GlobalStyle = createGlobalStyle`
     /* Tablet */
     @media screen and (max-width: 768px) and (min-width: 376px){
         h1{ font-size: 36px;}
-        h2{ font-size: 24px; }
+        h2{ font-size: 30px; }
         p, 
-        a{ font-size: 14px;}
+        a{ font-size: 16px;}
     }
     /* Y-Scrollbar */
     ::-webkit-scrollbar {

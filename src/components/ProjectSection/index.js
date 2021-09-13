@@ -86,30 +86,6 @@ const ProjectSection = () => {
                                     <TechItem>After Effects</TechItem>
                                 </ProjectTech>                           
                             </ProjectCard>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 2</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP>
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech> 
-                            </ProjectCard>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 3</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP> 
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech>                            
-                            </ProjectCard>
                         </ProjectWrapper>
                     </TabPanel>
                     <TabPanel>

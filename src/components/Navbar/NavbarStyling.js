@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkScroll} from "react-scroll";
+//import { Link as LinkScroll} from "react-scroll";
 import { NavHashLink as LinkRouter} from "react-router-hash-link";
 
 import { RiMenu3Line } from 'react-icons/ri';
@@ -21,6 +21,8 @@ export const Nav = styled.nav`
     @media screen and (max-width: 768px){
         padding-left: 5%;
         padding-right: 5%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
         height: 55px;
         margin-top: -55px;
     }
@@ -38,7 +40,7 @@ export const NavLogo = styled.div`
     align-items: center;
     width: 100%;
     opacity: 0;
-    animation: slide-logo 1.4s forwards 5.6s ease-in-out;
+    animation: slide-logo .4s forwards 5.6s ease-in-out;
     @keyframes slide-logo{
         from{
             opacity: 0;
@@ -48,7 +50,7 @@ export const NavLogo = styled.div`
         }
     }
 `;
-export const Logo = styled(LinkScroll)`
+export const Logo = styled(LinkRouter)`
     height: 32px;
     align-content: center;
     justify-content: center;
@@ -102,16 +104,16 @@ export const NavItem = styled.li`
     opacity: 0;
 
     &:nth-of-type(1){
-        animation: slide-menu-items .4s forwards 6.6s ease-in-out
+        animation: slide-menu-items .4s forwards 5.2s ease-in-out
     }
     &:nth-of-type(2){
-        animation: slide-menu-items .4s forwards 6.8s ease-in-out
+        animation: slide-menu-items .4s forwards 5.4s ease-in-out
     }
     &:nth-of-type(3){
-        animation: slide-menu-items .4s forwards 7s ease-in-out
+        animation: slide-menu-items .4s forwards 5.6s ease-in-out
     }
     &:nth-of-type(4){
-        animation: slide-menu-items .4s forwards 7.2s ease-in-out
+        animation: slide-menu-items .4s forwards 5.8s ease-in-out
     }
     @keyframes slide-menu-items{
         from{
@@ -147,7 +149,7 @@ export const NavBtn = styled.nav`
     transition: all .4s ease-in-out;
     margin-left: 1rem;
     opacity: 0;
-    animation: slide-menu-items .4s forwards 5.4s ease-in-out;
+    animation: slide-menu-items .4s forwards 6s ease-in-out;
 
     .dwnload{
         display: none;

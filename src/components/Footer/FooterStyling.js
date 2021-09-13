@@ -3,16 +3,16 @@ import { ImLinkedin } from "react-icons/im";
 import { FaGithubAlt } from "react-icons/fa";
 
 export const Nav = styled.nav`
-    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     bottom: 0;
-    padding-left: 2.5%;
+    margin-left: 2.5%;
     padding-right: 2.5%;
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 2.5%;
+    z-index: -1;
 `;
 export const NavContainer = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ export const NavContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1800px;
+    max-width: 900px;
     text-align: center;
 
     p{
@@ -32,7 +32,7 @@ export const NavContainer = styled.div`
 export const SocialWrapper = styled.div`
     display: none;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1040px){
         display: flex;
     }
 `

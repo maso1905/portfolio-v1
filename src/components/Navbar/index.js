@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { AiOutlineDownload as Download} from "react-icons/ai";
-import {animateScroll as scroll} from 'react-scroll';
+//import {animateScroll as scroll} from 'react-scroll';
 import Img from '../../images/logo.png';
 import PDF from "../../images/resume.pdf";
 import { 
@@ -30,9 +30,10 @@ const Navbar = ({toggle}) => {
         }
     };
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    };
+    /*const toggleHome = () => {
+        
+        window.location.reload(false);
+    };*/
 
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
@@ -44,17 +45,14 @@ const Navbar = ({toggle}) => {
                <NavContainer>
                     <NavLogo>
                         <Logo 
-                            aria-label="home"
-                            role="img" 
-                            rel="noreferrer"
-                            href="/"
-                            onClick={toggleHome}
+                            //onClick={toggleHome}
+                            to="/#home"
                             smooth={true} 
-                            duration= {600} 
+                            duration={700} 
                             spy={true} 
                             exact='true' 
                             offset={-75}
-                            tabIndex="1">
+                            tabIndex="1">  
                             <Icon src={Img} alt="Logo"/>
                         </Logo>
                     </NavLogo>
@@ -102,7 +100,7 @@ const Navbar = ({toggle}) => {
                             <NavLink 
                                 to="/#contact"
                                 smooth={true} 
-                                duration={600} 
+                                duration={700} 
                                 spy={true} 
                                 exact='true' 
                                 offset={-75}

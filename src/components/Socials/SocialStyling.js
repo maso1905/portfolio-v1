@@ -13,7 +13,7 @@ export const Wrap = styled.div`
     bottom: 0;
     width: 100%;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1040px){
         display: none;
     }
 `
@@ -25,7 +25,7 @@ export const Content = styled.div`
     width: 100%;
     z-index: 1;
     opacity: 0;
-    animation: fadeinSocial .6s forwards 5s ease-in-out;
+    animation: fadeinSocial .6s forwards 5.2s ease-in-out;
 
     @keyframes fadeinSocial{
     from{

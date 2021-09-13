@@ -17,24 +17,23 @@ export const Content = styled.div`
     }
     .small-welcome{
         opacity: 0;
-        font-size: 14px;
         color: ${(props) => props.theme.accentColor};
-        animation: section-slide-up .6s forwards 1.6s ease-in-out;
+        animation: section-slide-up .6s forwards 1s ease-in-out;
     }
     h1{
         opacity: 0;
-        animation: section-slide-up .6s forwards 2.6s ease-in-out;
+        animation: section-slide-up .6s forwards 2s ease-in-out;
     }
     h2{
         opacity: 0;
-        animation: section-slide-up .6s forwards 3.6s ease-in-out;
+        animation: section-slide-up .6s forwards 3s ease-in-out;
     }
     p{
         opacity: 0;
-        max-width: 700px;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        animation: section-slide-up .6s forwards 4.6s ease-in-out;
+        max-width: 900px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        animation: section-slide-up .6s forwards 6.4s ease-in-out;
         @media screen and (max-width: 768px){
             padding-top: 0;
             max-width: 200px;
@@ -54,7 +53,7 @@ export const Content = styled.div`
     .devAnim{
         display: inline-block;
         transform-origin: bottom left;
-        animation: developer-break 1s forwards 5.2s ease-in-out, developer-fall .4s forwards 6.2s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
+        animation: developer-break 1s forwards 4s ease-in-out, developer-fall .4s forwards 5s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
     }
     @keyframes developer-break{
         0% { transform: rotate(0deg) }
