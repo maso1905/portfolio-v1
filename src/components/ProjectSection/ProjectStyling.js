@@ -35,12 +35,12 @@ export const ProjectWrapper = styled.div`
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 568px){
         grid-template-columns: 1fr;
     }
 `
 export const ProjectCard = styled.div`
-    background-color: ${(props) => props.theme.darkerBG};
+    background-color: ${(props) => props.theme.cardColor};
     flex-direction: column;
     justify-content: center;
     border-radius: 6px;
@@ -51,13 +51,13 @@ export const ProjectCard = styled.div`
 
     &:hover{
         transform: scale(1.02);
-        transition: .4s ease-in-out;
+        transition: .2s ease-in-out;
         border: .5px solid ${(props) => props.theme.accentColor};
     }
     @media screen and (max-width: 1000px){
         &:hover{
             transform: scale(.98);
-            transition: .4s ease-in-out;
+            transition: .2s ease-in-out;
             border: .5px solid ${(props) => props.theme.accentColor};
         }
     }

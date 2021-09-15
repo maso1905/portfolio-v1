@@ -34,7 +34,7 @@ const Footer = () => {
                             </IconItem>
                         </SocialIcons>
                     </SocialWrapper>
-                    <p>	&#169; Made with React & Created by Malin Söderlund</p>
+                    <p>	&#169; 2021 by Malin S&ouml;derlund</p>
                </NavContainer>
            </Nav>
         </>

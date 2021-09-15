@@ -1,17 +1,25 @@
 import {createGlobalStyle} from 'styled-components';
 
 export const lightMode = {
-    body: '#a8b8cf',
-    darkerBG: 'rgb(16, 15, 41)',
+    body: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
+    nav: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
+    cardColor: 'rgba(0,0,0,0.04)',
     fontColor: 'rgb(16, 15, 41)',
-    accentColor: '#131537'
+    accentColor: '#02a686',
+    scrollThumbColor: '#02a686',
+    scrollThumbHover: 'rgb(16, 15, 41)'
 }
 
 export const darkMode = {
     body: '#131537',
+    nav: '#131537',
     darkerBG: 'rgb(16, 15, 41)',
+    cardColor: 'rgb(16, 15, 41)',
+    cardBorderColor: 'transparent',
     fontColor: '#a8b8cf',
-    accentColor: '#F9FF56'
+    accentColor: '#F9FF56',
+    scrollThumbColor: '#a8b8cf',
+    scrollThumbHover: '#F9FF56'
 };
 
 export const GlobalStyle = createGlobalStyle`  
@@ -23,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
     body{
-        background-color: ${(props) => props.theme.body};
+        background: ${(props) => props.theme.body};
         color: ${(props) => props.theme.fontColor};
         line-height: 1.5;
         font-family: 'Lato', sans-serif;
@@ -49,7 +57,10 @@ export const GlobalStyle = createGlobalStyle`
     a{ color: ${(props) => props.theme.fontColor}; }
     a:hover{ color: ${(props) => props.theme.accentColor}; }
     span{ color: ${(props) => props.theme.accentColor}; }
-    p{ padding-top: 2%; }
+
+    /* Tabs styling props */
+    .react-tabs{ border-color: ${(props) => props.theme.accentColor} !important; }
+    .react-tabs__tab--selected{ border-bottom-color: ${(props) => props.theme.accentColor} !important; }
 
     /* Mobile */
     @media screen and (max-width: 375px) and (min-width: 320px){
@@ -73,12 +84,13 @@ export const GlobalStyle = createGlobalStyle`
     }
     ::-webkit-scrollbar-track {
         border-radius: 4px;
+        background: ${(props) => props.theme.body};
     }
     ::-webkit-scrollbar-thumb {
-        background: ${(props) => props.theme.fontColor};
+        background: ${(props) => props.theme.scrollThumbColor};
         border-radius: 6px;
     }
     ::-webkit-scrollbar-thumb:hover {
-        background: ${(props) => props.theme.accentColor};
+        background: ${(props) => props.theme.scrollThumbHover};
     }
 `;

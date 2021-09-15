@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ImLinkedin } from "react-icons/im";
 import { FaGithubAlt } from "react-icons/fa";
+import {RiSunFoggyFill} from "react-icons/ri";
 
 export const Wrap = styled.div`
     display: flex;
@@ -12,9 +13,9 @@ export const Wrap = styled.div`
     position: fixed;
     bottom: 0;
     width: 100%;
-
-    @media screen and (max-width: 1040px){
-        display: none;
+    @media screen and (max-width: 1040px) {
+        width: 20%;
+        right: 0;
     }
 `
 export const Content = styled.div`
@@ -40,12 +41,18 @@ export const SocialWrapper = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
+    @media screen and (max-width: 1040px){
+        display: none;
+    }
 `
 export const ModeWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     align-content: center;
     width: 100%;
+    @media screen and (max-width: 1040px) {
+        width: 100%;
+    }
 `
 
 export const SocialIcons = styled.ul`
@@ -60,6 +67,30 @@ export const IconItem = styled.li`
     &:last-child{
         margin: 0 auto;
         height: 72px;
+        @media screen and (max-width: 1040px){
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1040px) {
+        margin-top: 0;
+        padding: 0.3rem 0.3rem;
+        background: ${(props) => props.theme.body};
+        border-radius: 50% 50%;
+        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.62);
+        &:active{
+            animation: zoom .6s forwards ease-in-out;
+            @keyframes zoom {
+                0% {
+                    transform: scale(1.3, 1.3);
+                }
+                100% {
+                    transform: scale(0, 0);
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        display: none;
     }
 `
 export const Icon = styled.a`
@@ -70,17 +101,7 @@ export const Icon = styled.a`
     &:hover{
         fill: ${(props) => props.theme.accentColor};
         color: ${(props) => props.theme.accentColor};
-        animation: pulse 1.2s infinite ease-in-out;
-        transform: scale(1);
-        @keyframes pulse {
-            0% {
-                transform: scale(1.1) rotate(0deg);
-                
-            }
-            100% {
-                transform: scale(1.1) rotate(360deg);
-            }
-        }
+        transform: scale(1.1);
     }
 `
 export const Stick = styled.svg`
@@ -94,15 +115,28 @@ export const Github = styled(FaGithubAlt)`
 export const LinkedIn = styled(ImLinkedin)`
     font-size: 26px;
 `
-export const Email = styled.a`
-    width: 30px;
+export const Button = styled.button`
     cursor: pointer;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    letter-spacing: 0.1em;
-
+    color: ${(props) => props.theme.fontColor};
+    margin: 0 auto;
+    background: none;
+    border: none;
     &:hover{
-        transform: scale(1.03);
-        transition: all .2s ease-in-out;
+        color: ${(props) => props.theme.accentColor};
+        transform: scale(1.1);
     }
+    &:active{
+        animation: zoom .6s forwards ease-in-out;
+        @keyframes zoom {
+        0% {
+            transform: scale(1.3, 1.3);
+        }
+        100% {
+            transform: scale(0, 0);
+        }
+    }
+    }
+`
+export const ModeIcon = styled(RiSunFoggyFill)`
+    font-size: 32px;
 `

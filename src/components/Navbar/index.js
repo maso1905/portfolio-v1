@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import { AiOutlineDownload as Download} from "react-icons/ai";
+import { ImHome as Home } from 'react-icons/im';
 //import {animateScroll as scroll} from 'react-scroll';
-import Img from '../../images/logo.png';
 import PDF from "../../images/resume.pdf";
+import CustomLogo from './CustomLogo';
 import { 
     Nav,
     NavContainer,
     NavLogo,
     Logo,
-    Icon,
     MobileMenu,
     Bars,
     NavItem,
@@ -17,8 +17,9 @@ import {
     NavBtn, 
     NavBtnLink
 } from './NavbarStyling';
+import { Button, ModeIcon } from "../Socials/SocialStyling";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle, themeToggler}) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -30,14 +31,15 @@ const Navbar = ({toggle}) => {
         }
     };
 
-    /*const toggleHome = () => {
-        
+    /*const toggleHome = () => {  
         window.location.reload(false);
     };*/
 
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
     }, []);
+
+ 
     
     return (
         <>
@@ -52,12 +54,33 @@ const Navbar = ({toggle}) => {
                             spy={true} 
                             exact='true' 
                             offset={-75}
-                            tabIndex="1">  
-                            <Icon src={Img} alt="Logo"/>
+                            tabIndex="1"
+                            aria-label="Home logo" >  
+                            <CustomLogo alt="Home logo" />
                         </Logo>
                     </NavLogo>
-                    <MobileMenu onClick={toggle}>
-                        <Bars />
+                    <MobileMenu>
+                        <NavItem>
+                            <NavLink 
+                                to="/#home"
+                                smooth={true} 
+                                duration={700} 
+                                spy={true} 
+                                exact='true' 
+                                offset={-75}
+                                tabIndex="1"
+                                aria-label="Home Mobile">   
+                                <Home alt="Home Mobile"/>
+                            </NavLink>                        
+                        </NavItem>
+                        <NavItem>
+                            <Bars onClick={toggle} />
+                        </NavItem>
+                        <NavItem>
+                            <Button type="button" onClick={themeToggler} aria-label="Darkmode and Lightmode Toggle" alt="Darkmode and Lightmode Toggle">
+                                <ModeIcon alt="Darkmode and Lightmode Toggle"/>
+                            </Button>
+                        </NavItem>    
                     </MobileMenu>
                     <NavMenu>
                         <NavItem>
@@ -68,7 +91,8 @@ const Navbar = ({toggle}) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-75}
-                                tabIndex="1">   
+                                tabIndex="1"
+                                aria-label="Home Desktop">   
                                 Home
                             </NavLink>
                         </NavItem>

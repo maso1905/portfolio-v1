@@ -4,17 +4,18 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2.5%;
+    padding-bottom: 5%;
     padding-left: 2.5%;
     padding-right: 2.5%;
     height: auto;
     overflow-x: hidden;
+    z-index: 0;
 
     @media screen and (max-width: 768px){
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 10%;
-        padding-bottom: 30%;
+        padding-bottom: 16%;
     }
 `
 export const ContentWrapper = styled.div`
@@ -22,6 +23,11 @@ export const ContentWrapper = styled.div`
     width: 100%;
     display: grid;
     justify-content: center;
+    z-index: 1;
+
+    @media screen and (max-width: 1040px){
+        max-width: 700px;
+    }
 `
 export const Row1 = styled.div`
     display: grid;

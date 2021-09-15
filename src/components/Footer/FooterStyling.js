@@ -10,9 +10,12 @@ export const Nav = styled.nav`
     bottom: 0;
     margin-left: 2.5%;
     padding-right: 2.5%;
-    padding-top: 5%;
-    padding-bottom: 2.5%;
-    z-index: -1;
+    padding-top: 2.5%;
+    z-index: 0;
+    @media screen and (max-width: 767px){
+        padding-top: 0;
+        margin-bottom: 98px;
+    }
 `;
 export const NavContainer = styled.div`
     display: flex;

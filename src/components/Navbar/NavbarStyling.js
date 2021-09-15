@@ -1,30 +1,30 @@
 import styled from "styled-components";
 //import { Link as LinkScroll} from "react-scroll";
 import { NavHashLink as LinkRouter} from "react-router-hash-link";
-
 import { RiMenu3Line } from 'react-icons/ri';
 
 export const Nav = styled.nav`
     height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     margin-top: -75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
     width: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    background: ${(props) => props.theme.body};
-    box-shadow: ${({scrollNav}) => (scrollNav ? '0 6px 2px -2px rgb(16, 15, 41);' : 'transparent')};
+    background: ${(props) => props.theme.nav};
     @media screen and (max-width: 768px){
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
+        position: fixed;
         height: 55px;
-        margin-top: -55px;
+        left: 0;
+        bottom: 0;
+        z-index: 5;
+        margin-top: 0;
+        top: unset;
+        background: none;
     }
 `;
 export const NavContainer = styled.div`
@@ -49,9 +49,11 @@ export const NavLogo = styled.div`
             opacity: 1;
         }
     }
+    @media screen and (max-width: 768px) {
+        display: none
+    }
 `;
 export const Logo = styled(LinkRouter)`
-    height: 32px;
     align-content: center;
     justify-content: center;
     color: ${(props) => props.theme.accentColor};
@@ -59,26 +61,28 @@ export const Logo = styled(LinkRouter)`
     cursor: pointer;
     margin-right: auto;
 `;
-export const Icon = styled.img`
-    max-width: 32px;
-    align-self: center;
-`
 
-export const MobileMenu = styled.div`
+export const MobileMenu = styled.ul`
     display: none;
     
     @media screen and (max-width: 768px) {
         display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
         width: 100%;
         font-size: 32px;
-        &:hover{ color: ${(props) => props.theme.accentColor};}
+        vertical-align: middle;
+        margin-bottom: 50px;
     }
 `;
 export const Bars = styled(RiMenu3Line)`
-    margin-left: auto;
+    margin: 0 auto;
     cursor: pointer;
     opacity: 0;
+    font-size: 32px;
     animation: slide-logo .4s forwards 5.6s ease-in-out;
     @keyframes slide-logo{
         from{
@@ -87,6 +91,10 @@ export const Bars = styled(RiMenu3Line)`
         to{
             opacity: 1;
         }
+    }
+    &:hover{ 
+        color: ${(props) => props.theme.accentColor};
+        transform: scale(1.1);
     }
 `;
 export const NavMenu = styled.ol`
@@ -100,9 +108,19 @@ export const NavMenu = styled.ol`
     }
 `;
 export const NavItem = styled.li`
-    height: 53px;
     opacity: 0;
+    padding: 0 1rem;
 
+    @media screen and (max-width: 768px) {
+        height: 48px;
+        width: 48px;
+        margin: 0;
+        margin-top: auto;
+        padding: 0.25rem 0.25rem;
+        background: ${(props) => props.theme.body};
+        border-radius: 50% 50%;
+        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.62);
+    }
     &:nth-of-type(1){
         animation: slide-menu-items .4s forwards 5.2s ease-in-out
     }
@@ -129,11 +147,19 @@ export const NavItem = styled.li`
 export const NavLink = styled(LinkRouter)`
     display: flex;
     align-items: center;
-    justify-items: space-between;
-    padding: 0 1rem;
+    justify-content: center;
     height: 100%;
     cursor: pointer;
-
+    text-align: center;
+    padding: 0 1rem;
+  
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        font-size: 30px;
+        &:hover{ 
+        transform: scale(1.1);
+    }
+    }
     /*&.active{
         color: ${(props) => props.theme.accentColor};
         &:first-child{

@@ -21,6 +21,9 @@ export const ContentWrapper = styled.div`
     width: 100%;
     display: grid;
     justify-content: center;
+    @media screen and (max-width: 1040px){
+        max-width: 700px;
+    }
 `
 export const Row = styled.div`
     display: grid;
@@ -74,10 +77,7 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 100%;
     box-shadow: 4px 7px 19px 0px rgba(0, 0, 0, 0.42);
-    border-radius: 6px;
-    @media screen and (max-width: 768px){
-        border-radius: 50% 50%;
-    }
+    border-radius: 50% 50%;
 `
 
 

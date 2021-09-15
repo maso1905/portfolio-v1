@@ -7,18 +7,16 @@ import Footer from '../components/Footer';
 import IntroSection from '../components/IntroSection';
 import Navbar from '../components/Navbar';
 import ProjectSection from '../components/ProjectSection';
-import Socials from '../components/Socials';
 
-const Home = () => {
+const Home = ({themeToggler}) => {
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => {
         setIsOpen(!isOpen)
     }
     return (
         <>
-            <Socials />
             <Dropdown isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+            <Navbar toggle={toggle} themeToggler={themeToggler} />
             <IntroSection />
             <AboutSection {...ObjOne}/>
             <ProjectSection />

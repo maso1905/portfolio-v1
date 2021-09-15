@@ -32,7 +32,6 @@ export const Content = styled.div`
         opacity: 0;
         max-width: 900px;
         margin-top: 1%;
-        margin-bottom: 1%;
         animation: section-slide-up .6s forwards 6.4s ease-in-out;
         @media screen and (max-width: 768px){
             padding-top: 0;
