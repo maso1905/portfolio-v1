@@ -3,6 +3,8 @@ import {createGlobalStyle} from 'styled-components';
 export const lightMode = {
     body: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
     nav: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
+    moz: '-moz-linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
+    webkit: '-webkit-linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
     cardColor: 'rgba(0,0,0,0.04)',
     fontColor: 'rgb(16, 15, 41)',
     accentColor: '#02a686',
@@ -31,9 +33,12 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
     body{
+        background: ${(props) => props.theme.moz};
+        background: ${(props) => props.theme.webkit};
         background: ${(props) => props.theme.body};
         color: ${(props) => props.theme.fontColor};
         line-height: 1.5;
+        scroll-behavior: smooth;
         font-family: 'Lato', sans-serif;
         cursor: auto;
     }
@@ -53,7 +58,7 @@ export const GlobalStyle = createGlobalStyle`
     h5{ font-size: 14px;}
     h6{ font-size: 12px;}
     p, 
-    a{ font-size: 16px;}
+    a{ font-size: 17px;}
     a{ color: ${(props) => props.theme.fontColor}; }
     a:hover{ color: ${(props) => props.theme.accentColor}; }
     span{ color: ${(props) => props.theme.accentColor}; }
@@ -69,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 26px;
         }
         p, 
-        a{ font-size: 14px;}
+        a{ font-size: 15px;}
     }
     /* Tablet */
     @media screen and (max-width: 768px) and (min-width: 376px){
@@ -79,18 +84,18 @@ export const GlobalStyle = createGlobalStyle`
         a{ font-size: 16px;}
     }
     /* Y-Scrollbar */
-    ::-webkit-scrollbar {
+    body::-webkit-scrollbar {
         width: 6px;
     }
-    ::-webkit-scrollbar-track {
+    body::-webkit-scrollbar-track {
         border-radius: 4px;
         background: ${(props) => props.theme.body};
     }
-    ::-webkit-scrollbar-thumb {
+    body::-webkit-scrollbar-thumb {
         background: ${(props) => props.theme.scrollThumbColor};
         border-radius: 6px;
     }
-    ::-webkit-scrollbar-thumb:hover {
+    body::-webkit-scrollbar-thumb:hover {
         background: ${(props) => props.theme.scrollThumbHover};
     }
 `;

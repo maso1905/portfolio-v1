@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     padding-right: 2.5%;
     padding-top: 2.5%;
     z-index: 0;
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 768px){
         padding-top: 0;
         margin-bottom: 98px;
     }

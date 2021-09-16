@@ -31,24 +31,22 @@ const Navbar = ({toggle, themeToggler}) => {
         }
     };
 
-    /*const toggleHome = () => {  
+    const toggleHome = () => {  
         window.location.reload(false);
-    };*/
+    };
 
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
     }, []);
 
- 
-    
     return (
         <>
            <Nav scrollNav={scrollNav}>
                <NavContainer>
                     <NavLogo>
                         <Logo 
-                            //onClick={toggleHome}
-                            to="/#home"
+                            onClick={toggleHome}
+                            to="/"
                             smooth={true} 
                             duration={700} 
                             spy={true} 

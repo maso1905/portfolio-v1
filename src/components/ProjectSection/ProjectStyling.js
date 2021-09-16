@@ -50,14 +50,22 @@ export const ProjectCard = styled.div`
     cursor: pointer;
 
     &:hover{
-        transform: scale(1.02);
         transition: .2s ease-in-out;
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
         border: .5px solid ${(props) => props.theme.accentColor};
     }
     @media screen and (max-width: 1000px){
         &:hover{
-            transform: scale(.98);
             transition: .2s ease-in-out;
+            -webkit-transform: scale(.98);
+            -moz-transform: scale(.98);
+            -o-transform: scale(.98);
+            -ms-transform: scale(.98);
+            transform: scale(.98);
             border: .5px solid ${(props) => props.theme.accentColor};
         }
     }
@@ -66,7 +74,6 @@ export const ProjectImage = styled.img`
     max-width: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-
 `
 export const ProjectH3 = styled.h3`
     padding: 5%;

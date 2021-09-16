@@ -15,7 +15,6 @@ export const DropdownContainer = styled.aside`
     transition: .4s ease-in-out;
     opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
     bottom: ${({isOpen}) => (isOpen ? '0' : '-100%')};
-    
 `
 export const CloseIcon = styled(AiOutlineCloseCircle)`
     text-align: center;
@@ -32,6 +31,9 @@ export const Icon = styled.div`
     bottom: 5%;
     left: 50%;
     -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 `
 export const Wrapper = styled.div`

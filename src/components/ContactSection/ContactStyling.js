@@ -58,19 +58,31 @@ export const ImgWrap = styled.div`
     height: auto;
     display: block;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    @media screen and (max-width: 1040px){
+        width: 80%;
+    }
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `
 export const NavBtn = styled.div`
     display: flex;
     align-content: center;
     border-radius: 4px;
-    transition: all .2s ease-in-out;
     max-width: 150px;
     height: 64px;
     text-align: center;
     margin: 0 auto;
     cursor: pointer;
     margin-top: 5%;
+    transition: all .2s ease-in-out;
     &:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1);
         color: ${(props) => props.theme.accentColor};
     }

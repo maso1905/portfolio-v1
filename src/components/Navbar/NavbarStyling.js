@@ -15,6 +15,8 @@ export const Nav = styled.nav`
     width: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    background: ${(props) => props.theme.moz};
+    background: ${(props) => props.theme.webkit};
     background: ${(props) => props.theme.nav};
     @media screen and (max-width: 768px){
         position: fixed;
@@ -40,6 +42,10 @@ export const NavLogo = styled.div`
     align-items: center;
     width: 100%;
     opacity: 0;
+    -webkit-animation: slide-logo .4s forwards 5.6s ease-in-out;
+    -moz-animation: slide-logo .4s forwards 5.6s ease-in-out;
+    -o-animation: slide-logo .4s forwards 5.6s ease-in-out;
+    -ms-animation: slide-logo .4s forwards 5.6s ease-in-out;
     animation: slide-logo .4s forwards 5.6s ease-in-out;
     @keyframes slide-logo{
         from{
@@ -83,6 +89,10 @@ export const Bars = styled(RiMenu3Line)`
     cursor: pointer;
     opacity: 0;
     font-size: 32px;
+    -webkit-animation: slide-logo .4s forwards 5.6s ease-in-out;
+    -moz-animation: slide-logo .4s forwards 5.6s ease-in-out;
+    -o-animation: slide-logo .4s forwards 5.6s ease-in-out;
+    -ms-animation: slide-logo .4s forwards 5.6s ease-in-out;
     animation: slide-logo .4s forwards 5.6s ease-in-out;
     @keyframes slide-logo{
         from{
@@ -94,6 +104,10 @@ export const Bars = styled(RiMenu3Line)`
     }
     &:hover{ 
         color: ${(props) => props.theme.accentColor};
+        -webkit-transform: scale(1.1); 
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1);
     }
 `;
@@ -109,7 +123,7 @@ export const NavMenu = styled.ol`
 `;
 export const NavItem = styled.li`
     opacity: 0;
-    padding: 0 1rem;
+    padding: 0 .5rem;
 
     @media screen and (max-width: 768px) {
         height: 48px;
@@ -117,28 +131,54 @@ export const NavItem = styled.li`
         margin: 0;
         margin-top: auto;
         padding: 0.25rem 0.25rem;
+        background: ${(props) => props.theme.moz};
+        background: ${(props) => props.theme.webkit};
         background: ${(props) => props.theme.body};
         border-radius: 50% 50%;
         box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.62);
     }
     &:nth-of-type(1){
+        -webkit-animation: slide-menu-items .4s forwards 5.2s ease-in-out;
+        -moz-animation: slide-menu-items .4s forwards 5.2s ease-in-out;
+        -o-animation: slide-menu-items .4s forwards 5.2s ease-in-out;
+        -ms-animation: slide-menu-items .4s forwards 5.2s ease-in-out;
         animation: slide-menu-items .4s forwards 5.2s ease-in-out
     }
     &:nth-of-type(2){
+        -webkit-animation: slide-menu-items .4s forwards 5.4s ease-in-out;
+        -moz-animation: slide-menu-items .4s forwards 5.4s ease-in-out;
+        -o-animation: slide-menu-items .4s forwards 5.4s ease-in-out;
+        -ms-animation: slide-menu-items .4s forwards 5.4s ease-in-out;
         animation: slide-menu-items .4s forwards 5.4s ease-in-out
     }
     &:nth-of-type(3){
+        -webkit-animation: slide-menu-items .4s forwards 5.6s ease-in-out;
+        -moz-animation: slide-menu-items .4s forwards 5.6s ease-in-out;
+        -o-animation: slide-menu-items .4s forwards 5.6s ease-in-out;
+        -ms-animation: slide-menu-items .4s forwards 5.6s ease-in-out;
         animation: slide-menu-items .4s forwards 5.6s ease-in-out
     }
     &:nth-of-type(4){
+        -webkit-animation: slide-menu-items .4s forwards 5.8s ease-in-out;
+        -moz-animation: slide-menu-items .4s forwards 5.8s ease-in-out;
+        -o-animation: slide-menu-items .4s forwards 5.8s ease-in-out;
+        -ms-animation: slide-menu-items .4s forwards 5.8s ease-in-out;
         animation: slide-menu-items .4s forwards 5.8s ease-in-out
     }
     @keyframes slide-menu-items{
         from{
+            -webkit-transform: translateX(10%);
+            -moz-transform: translateX(10%);
+            -o-transform: translateX(10%);
+            -ms-transform: translateX(10%);
             transform: translateX(10%);
             opacity: 0;
         }
         to{
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
             transform: translateX(0);
             opacity: 1;
         }
@@ -157,8 +197,12 @@ export const NavLink = styled(LinkRouter)`
         padding: 0;
         font-size: 30px;
         &:hover{ 
-        transform: scale(1.1);
-    }
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
     }
     /*&.active{
         color: ${(props) => props.theme.accentColor};
@@ -175,6 +219,10 @@ export const NavBtn = styled.nav`
     transition: all .4s ease-in-out;
     margin-left: 1rem;
     opacity: 0;
+    -webkit-animation: slide-menu-items .4s forwards 6s ease-in-out;
+    -moz-animation: slide-menu-items .4s forwards 6s ease-in-out;
+    -o-animation: slide-menu-items .4s forwards 6s ease-in-out;
+    -ms-animation: slide-menu-items .4s forwards 6s ease-in-out;
     animation: slide-menu-items .4s forwards 6s ease-in-out;
 
     .dwnload{
