@@ -3,6 +3,7 @@ import {createGlobalStyle} from 'styled-components';
 export const lightMode = {
     body: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
     nav: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
+    navMobile: 'linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
     moz: '-moz-linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
     webkit: '-webkit-linear-gradient(90deg, rgba(245,255,239,1) 0%, rgba(210,255,239,1) 100%)',
     cardColor: 'rgba(0,0,0,0.04)',
@@ -15,6 +16,7 @@ export const lightMode = {
 export const darkMode = {
     body: '#131537',
     nav: '#131537',
+    navMobile: 'rgb(16, 15, 41)',
     darkerBG: 'rgb(16, 15, 41)',
     cardColor: 'rgb(16, 15, 41)',
     cardBorderColor: 'transparent',

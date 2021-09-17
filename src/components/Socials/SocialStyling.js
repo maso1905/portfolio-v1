@@ -77,11 +77,13 @@ export const IconItem = styled.li`
     @media screen and (max-width: 1040px) {
         margin-top: 0;
         padding: 0.3rem 0.3rem;
+        height: 48px;
+        width: 48px;
         background: ${(props) => props.theme.moz};
         background: ${(props) => props.theme.webkit};
-        background: ${(props) => props.theme.body};
+        background: ${(props) => props.theme.navMobile};
         border-radius: 50% 50%;
-        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.62);
+        box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.62);
         &:active{
             -webkit-animation: zoom .6s forwards ease-in-out;
             -moz-animation: zoom .6s forwards ease-in-out;

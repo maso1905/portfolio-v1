@@ -1,22 +1,26 @@
 import React from 'react'
 import styled from "styled-components";
 
-const Styling = styled.svg`
-    fill: ${(props) => props.theme.accentColor};
-    font-family: Calibri;
-    font-size: 116.98px;
-    width: 32px;
-    height: 32px;
+const Styling = styled.svg`  
+    width: 40px;
+    height: 40px;
+    #M{
+        fill: ${(props) => props.theme.accentColor};
+    }
+    #Ellipse_12{
+        stroke: ${(props) => props.theme.accentColor};
+        fill: none;
+    }
 `
-
 const CustomLogo = () => {
     return (
         <Styling>
-            <svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159 159">
-                <g>
-                    <path class="cls-1" d="M150.5,68A70.5,70.5,0,1,1,80,138.5,70.58,70.58,0,0,1,150.5,68m0-9A79.5,79.5,0,1,0,230,138.5,79.5,79.5,0,0,0,150.5,59Z" transform="translate(-71 -59)"/>
-                    <text class="cls-2" transform="translate(34.5 112.45) scale(0.89 1)">M</text>
+            <svg id="Component_8_1" data-name="Component 8 – 1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 143 143">
+                <g id="Ellipse_12" data-name="Ellipse 12" stroke-width="9">
+                    <circle cx="71.5" cy="71.5" r="71.5" stroke="none"/>
+                    <circle cx="71.5" cy="71.5" r="67" fill="none"/>
                 </g>
+                <text id="M" transform="translate(28 108)" font-size="105" font-family="ArialMT, Arial"><tspan x="0" y="0">M</tspan></text>
             </svg>
         </Styling>
     );

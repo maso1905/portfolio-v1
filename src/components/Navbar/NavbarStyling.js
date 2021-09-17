@@ -133,9 +133,9 @@ export const NavItem = styled.li`
         padding: 0.25rem 0.25rem;
         background: ${(props) => props.theme.moz};
         background: ${(props) => props.theme.webkit};
-        background: ${(props) => props.theme.body};
+        background: ${(props) => props.theme.navMobile};
         border-radius: 50% 50%;
-        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.62);
+        box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.62);
     }
     &:nth-of-type(1){
         -webkit-animation: slide-menu-items .4s forwards 5.2s ease-in-out;
