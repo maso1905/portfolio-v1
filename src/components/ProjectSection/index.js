@@ -2,19 +2,14 @@ import React, {useState, useEffect} from 'react'
 import {
     Section,
     ContentWrapper,
-    ProjectWrapper,
-    ProjectCard,
-    ProjectImage,
-    ProjectP,
-    ProjectH3,
-    ProjectTech,
-    TechItem
+    ProjectWrapper
 } from './ProjectStyling';
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import ScrShot1 from '../../images/ofmScr.png'
 import "aos/dist/aos.css";
 import Aos from 'aos';
+import Card from './Card';
+import { Prj1, Prj2, Prj3, Prj4, Prj5, Prj6, Prj7 } from './Data';
 
 const ProjectSection = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -31,105 +26,22 @@ const ProjectSection = () => {
                 <h2>Projects</h2>
                 <Tabs selectedIndex={tabIndex} onSelect={index => setTabIndex(index)}>
                     <TabList>
-                        <Tab tabIndex="0">JavaScript</Tab>
-                        <Tab tabIndex="0">C#</Tab>
-                        <Tab tabIndex="0">Unity</Tab>
+                        <Tab tabIndex="0">Featured</Tab>
+                        <Tab tabIndex="0">In Progress</Tab>
                     </TabList>
-
                     <TabPanel>
                         <ProjectWrapper>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 1</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP> 
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech>                           
-                            </ProjectCard>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 2</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP>
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech> 
-                            </ProjectCard>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 3</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP>  
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech>                           
-                            </ProjectCard>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 1</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP> 
-                                <ProjectTech className="prjtechs" alt="Project title">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech>                           
-                            </ProjectCard>
+                            <Card {...Prj1}/>
+                            <Card {...Prj2}/>
+                            <Card {...Prj3}/>
+                            <Card {...Prj4}/>
+                            <Card {...Prj5}/>
+                            <Card {...Prj6}/>
                         </ProjectWrapper>
                     </TabPanel>
                     <TabPanel>
-                    <ProjectWrapper>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 1</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP> 
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech>                            
-                            </ProjectCard>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 2</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP>
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech> 
-                            </ProjectCard>
-                        </ProjectWrapper>
-                    </TabPanel>
-                    <TabPanel>
-                    <ProjectWrapper>
-                            <ProjectCard tabIndex="0">
-                                <ProjectImage src={ScrShot1} alt="Project title"/>
-                                <ProjectH3>Project 1</ProjectH3>
-                                <ProjectP>
-                                    My name is Malin and I’m 29 years old from Stockholm, Sweden and I’m a recent web development gradute from Mid Sweden University.
-                                </ProjectP>
-                                <ProjectTech className="prjtechs">
-                                    <TechItem>React</TechItem>
-                                    <TechItem>CSS</TechItem>
-                                    <TechItem>After Effects</TechItem>
-                                </ProjectTech>                             
-                            </ProjectCard>
+                        <ProjectWrapper>
+                            <Card {...Prj7}/>
                         </ProjectWrapper>
                     </TabPanel>
                 </Tabs>  

@@ -1,0 +1,70 @@
+export const Prj1 = {
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of Portfolio Project',
+    title: 'React Portfolio',
+    desc: 'My very first React project',
+    techItem1: 'ReactJS',
+    techItem2: 'JavaScript',
+    techItem3: 'Styled Components',
+    techItem4: 'After Effects'
+};
+
+export const Prj2 = {
+    url: "https://molliepoppin.itch.io/operation-full-moon",
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of Operation Full Moon Project',
+    title: 'Operation Full Moon',
+    desc: 'My first ever 3D game project with Unity. The projects was a part of a weekly challenge by the indie game developer David Whele`s course GDU.',
+    techItem1: 'Unity',
+    techItem2: 'C#',
+    techItem3: 'PlayMaker'
+};
+
+export const Prj3 = {
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of WordPress Project',
+    title: 'WordPress Portfolio',
+    desc: 'My version 1 of my personal portfolio. Made with WordPress.',
+    techItem1: 'WordPress',
+    techItem2: 'PHP'
+};
+
+export const Prj4 = {
+    url: "https://molliepoppin.itch.io/operation-full-moon",
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of Thesis Project',
+    title: 'Webserver From ASP.NET 4.8 to Blazor Server',
+    desc: 'Education thesis project.',
+    techItem1: 'Blazor',
+    techItem2: 'C#',
+    techItem3: 'Bootstrap'
+};
+
+export const Prj5 = {
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of The Game Corner Project',
+    title: 'The Game Corner',
+    desc: 'This was the final examination of the ASP.NET CORE WITH C# course. The project is a .NET Entity Framework web application with CRUD functionality.',
+    techItem1: 'C#',
+    techItem2: 'ASP.NET Core',
+};
+
+export const Prj6 = {
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of Swedish Radio Open API Project',
+    title: 'Swedish Radio Open API',
+    desc: 'A tableu web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON, this in order to present the channels and it’s up coming programs and dates.',
+    techItem1: 'JavaScript',
+    techItem2: 'AJAX',
+    techItem3: 'API'
+};
+
+export const Prj7 = {
+    img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of 2D Game Project',
+    title: '2D Game',
+    desc: 'My second game is going to be a 2D game which I´m currently working on.',
+    techItem1: 'Unity',
+    techItem2: 'C#',
+    techItem3: 'Adobe Photoshop'
+};
