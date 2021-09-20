@@ -7,18 +7,17 @@ export const lightMode = {
     moz: '-moz-linear-gradient(90deg, rgba(245,255,249,1) 0%, rgba(210,255,239,1) 100%)',
     webkit: '-webkit-linear-gradient(90deg, rgba(245,255,249,1) 0%, rgba(210,255,239,1) 100%)',
     cardColor: 'rgba(0,0,0,0.04)',
-    fontColor: 'rgb(16, 15, 41)',
+    fontColor: '#131537',
     accentColor: '#02a686',
     scrollThumbColor: '#02a686',
     scrollThumbHover: 'rgb(16, 15, 41)'
 }
 
 export const darkMode = {
-    body: '#131537',
-    nav: '#131537',
-    navMobile: 'rgb(16, 15, 41)',
-    darkerBG: 'rgb(16, 15, 41)',
-    cardColor: 'rgb(16, 15, 41)',
+    body: '#16183A',
+    nav: '#16183A',
+    navMobile: '#16183A',
+    cardColor: 'rgb(16, 15, 49)',
     cardBorderColor: 'transparent',
     fontColor: '#a8b8cf',
     accentColor: '#F9FF56',
@@ -60,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
     h5{ font-size: 14px;}
     h6{ font-size: 12px;}
     p, 
-    a{ font-size: 16px;}
+    a{ font-size: 15px;}
     a{ color: ${(props) => props.theme.fontColor}; }
     a:hover{ color: ${(props) => props.theme.accentColor}; }
     span{ color: ${(props) => props.theme.accentColor}; }

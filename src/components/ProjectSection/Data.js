@@ -6,7 +6,6 @@ export const Prj1 = {
     desc: 'My very first React project',
     techItem1: 'ReactJS',
     techItem2: 'JavaScript',
-    techItem3: 'Styled Components',
     techItem4: 'After Effects'
 };
 

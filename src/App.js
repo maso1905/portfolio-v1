@@ -19,7 +19,7 @@ import {
 } from './components/Socials/SocialStyling';
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const themeToggler = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");

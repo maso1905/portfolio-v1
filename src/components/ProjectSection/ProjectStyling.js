@@ -48,7 +48,7 @@ export const ProjectCard = styled.a`
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.32);
     transition: all .2s ease-in-out;
     cursor: pointer;
-    height: 28rem;
+    height: 27rem;
     line-height: 1.2;
     position: relative;
 
