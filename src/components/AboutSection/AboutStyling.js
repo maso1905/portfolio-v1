@@ -5,7 +5,7 @@ export const Section = styled.section`
     justify-content: center;
     align-items: center;
     height: auto;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-left: 2.5%;
     padding-right: 2.5%;
     padding-top: 90px;
@@ -42,11 +42,14 @@ export const Col1 = styled.div`
     }
     
 `
+export const Paragraph = styled.p`
+    margin-bottom: 2.5%;
+`
 export const InfoWrapper = styled.div`
     border-top: 1px solid ${(props) => props.theme.accentColor};
     border-left: 1px solid ${(props) => props.theme.accentColor};
     border-top-left-radius: 6px;
-    padding: 2% 0 5% 5%;
+    padding: 5% 0 5% 5%;
     @media screen and (max-width: 768px){
         padding: 2%;
         border: none;

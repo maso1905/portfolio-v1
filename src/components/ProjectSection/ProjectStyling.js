@@ -25,7 +25,7 @@ export const ProjectWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 14px;
+    grid-gap: 20px;
     padding-left: 1.25%;
     padding-right: 1.25%;
     justify-content: stretch;
@@ -71,21 +71,30 @@ export const ProjectCard = styled.a`
             border: .5px solid ${(props) => props.theme.accentColor};
         }
     }
+    @media screen and (max-width: 1000px){
+        height: 31rem;
+    }
+    @media screen and (max-width: 768px){
+        height: 25rem;
+    }
+    @media screen and (max-width: 568px){
+        height: 30rem;
+    }
    
+`
+export const ImgContainer = styled.div`
+    position: relative;
+    opacity: 0.4;
+    &:hover {
+        opacity: 1;
+    }
 `
 export const ProjectImage = styled.img`
     width: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    @media screen and (max-width: 1000px){
-        height: 13rem;
-    }
-    @media screen and (max-width: 568px){
-        height: 14rem;
-    }
-    @media screen and (max-width: 375px){
-        height: 12rem;
-    }
+    display: block;
+    transition: .5s ease;
 `
 export const ProjectH3 = styled.h3`
     padding: 5% 5% 0 5%;

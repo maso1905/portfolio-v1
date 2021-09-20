@@ -17,7 +17,7 @@ export const darkMode = {
     body: '#16183A',
     nav: '#16183A',
     navMobile: '#16183A',
-    cardColor: 'rgb(16, 15, 49)',
+    cardColor: '#13142A',
     cardBorderColor: 'transparent',
     fontColor: '#a8b8cf',
     accentColor: '#F9FF56',
@@ -59,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
     h5{ font-size: 14px;}
     h6{ font-size: 12px;}
     p, 
-    a{ font-size: 15px;}
+    a{ font-size: 16px;}
     a{ color: ${(props) => props.theme.fontColor}; }
     a:hover{ color: ${(props) => props.theme.accentColor}; }
     span{ color: ${(props) => props.theme.accentColor}; }

@@ -51,7 +51,7 @@ export const Content = styled.div`
         animation: section-slide-up .6s forwards 6.4s ease-in-out;
         @media screen and (max-width: 768px){
             padding-top: 0;
-            max-width: 200px;
+            max-width: 300px;
         }
     }
     @keyframes section-slide-up{

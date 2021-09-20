@@ -11,7 +11,7 @@ const IntroSection = () => {
                 <p class="small-welcome">Welcome,</p>
                 <h1>My name is Malin.</h1>
                 <h2>I'm a <span>Web <div class="devAnim">Developer</div></span></h2>
-                <p>I love exploring the limits of creativity for the web!</p>
+                <p>This is my portfolio containing some my proudest work so far. Have a look around!</p>
             </Content>
         </Section>
     );
