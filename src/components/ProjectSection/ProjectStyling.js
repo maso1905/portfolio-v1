@@ -49,7 +49,7 @@ export const ProjectCard = styled.a`
     transition: all .2s ease-in-out;
     cursor: pointer;
     height: 27rem;
-    line-height: 1.2;
+    line-height: 1.3;
     position: relative;
 
     &:hover{
