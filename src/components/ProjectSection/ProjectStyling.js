@@ -10,14 +10,13 @@ export const Section = styled.section`
     padding-left: 2.5%;
     padding-right: 2.5%;
     padding-bottom: 10%;
-
     @media screen and (max-width: 768px){
         padding-left: 5%;
         padding-right: 5%;
     }
 `
 export const ContentWrapper = styled.div`
-    max-width: 900px;
+    max-width: 1100px;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -25,8 +24,8 @@ export const ContentWrapper = styled.div`
 export const ProjectWrapper = styled.div`
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 14px;
     padding-left: 1.25%;
     padding-right: 1.25%;
     justify-content: stretch;
@@ -49,7 +48,7 @@ export const ProjectCard = styled.a`
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.32);
     transition: all .2s ease-in-out;
     cursor: pointer;
-    height: 30rem;
+    height: 28rem;
     line-height: 1.2;
     position: relative;
 
@@ -72,12 +71,21 @@ export const ProjectCard = styled.a`
             border: .5px solid ${(props) => props.theme.accentColor};
         }
     }
+   
 `
 export const ProjectImage = styled.img`
     width: 100%;
-    height: 14rem;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    @media screen and (max-width: 1000px){
+        height: 13rem;
+    }
+    @media screen and (max-width: 568px){
+        height: 14rem;
+    }
+    @media screen and (max-width: 375px){
+        height: 12rem;
+    }
 `
 export const ProjectH3 = styled.h3`
     padding: 5% 5% 0 5%;
@@ -96,5 +104,6 @@ export const TechItem = styled.li`
     display: inline-block;
     padding: 2%;
     font-size: 14px;
+    padding-left: 0;
 `
 

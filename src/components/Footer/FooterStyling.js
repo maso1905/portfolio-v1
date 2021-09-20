@@ -35,7 +35,7 @@ export const NavContainer = styled.div`
 export const SocialWrapper = styled.div`
     display: none;
 
-    @media screen and (max-width: 1040px){
+    @media screen and (max-width: 1240px){
         display: flex;
     }
 `

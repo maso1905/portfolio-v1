@@ -60,7 +60,7 @@ export const ImgWrap = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    @media screen and (max-width: 1040px){
+    @media screen and (max-width: 1240px){
         width: 80%;
     }
     @media screen and (max-width: 768px){

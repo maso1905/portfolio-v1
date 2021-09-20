@@ -1,4 +1,5 @@
 export const Prj1 = {
+    url: "https://maso1905.github.io/portfolio-v1/",
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of Portfolio Project',
     title: 'React Portfolio',
@@ -21,6 +22,7 @@ export const Prj2 = {
 };
 
 export const Prj3 = {
+    url: "https://malinsoderlund.com/",
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of WordPress Project',
     title: 'WordPress Portfolio',
@@ -30,17 +32,19 @@ export const Prj3 = {
 };
 
 export const Prj4 = {
-    url: "https://molliepoppin.itch.io/operation-full-moon",
+    url: "https://www.diva-portal.org/smash/get/diva2:1564118/FULLTEXT01.pdf",
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of Thesis Project',
     title: 'Webserver From ASP.NET 4.8 to Blazor Server',
     desc: 'Education thesis project.',
     techItem1: 'Blazor',
     techItem2: 'C#',
-    techItem3: 'Bootstrap'
+    techItem3: 'Bootstrap',
+    techItem4: 'Docker'
 };
 
 export const Prj5 = {
+    url: 'https://www.youtube.com/watch?v=hUUaGYvzXes',
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of The Game Corner Project',
     title: 'The Game Corner',
@@ -50,16 +54,19 @@ export const Prj5 = {
 };
 
 export const Prj6 = {
+    url: 'http://studenter.miun.se/~maso1905/dt084g/projektarbete/projekt_sr/',
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of Swedish Radio Open API Project',
     title: 'Swedish Radio Open API',
-    desc: 'A tableu web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON, this in order to present the channels and it’s up coming programs and dates.',
+    desc: 'A tableu web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON.',
     techItem1: 'JavaScript',
     techItem2: 'AJAX',
-    techItem3: 'API'
+    techItem3: 'API',
+    techItem4: 'JSON'
 };
 
 export const Prj7 = {
+    url: '',
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of 2D Game Project',
     title: '2D Game',

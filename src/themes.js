@@ -55,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
     
     h1{ font-size: 64px;}
     h2{ font-size: 32px;}
-    h3{ font-size: 20px;}
+    h3{ font-size: 18px;}
     h4{ font-size: 16px;}
     h5{ font-size: 14px;}
     h6{ font-size: 12px;}
@@ -70,11 +70,12 @@ export const GlobalStyle = createGlobalStyle`
     .react-tabs__tab--selected{ border-bottom-color: ${(props) => props.theme.accentColor} !important; }
 
     /* Mobile */
-    @media screen and (max-width: 375px) and (min-width: 320px){
+    @media screen and (max-width: 375px) and (min-width: 280px){
         h1{ font-size: 30px;}
         h2{ 
-            font-size: 26px;
+            font-size: 22px;
         }
+        h3{ font-size: 16px;}
         p, 
         a{ font-size: 14px;}
     }
@@ -82,8 +83,9 @@ export const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 768px) and (min-width: 376px){
         h1{ font-size: 36px;}
         h2{ font-size: 30px; }
+        h3{ font-size: 18px;}
         p, 
-        a{ font-size: 16px;}
+        a{ font-size: 14px;}
     }
     /* Y-Scrollbar */
     body::-webkit-scrollbar {

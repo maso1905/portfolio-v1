@@ -13,7 +13,7 @@ export const Wrap = styled.div`
     position: fixed;
     bottom: 0;
     width: 100%;
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1240px) {
         width: 20%;
         right: 0;
     }
@@ -45,7 +45,7 @@ export const SocialWrapper = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    @media screen and (max-width: 1040px){
+    @media screen and (max-width: 1240px){
         display: none;
     }
 `
@@ -54,7 +54,7 @@ export const ModeWrapper = styled.div`
     justify-content: flex-end;
     align-content: center;
     width: 100%;
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1240px) {
         width: 100%;
     }
 `
@@ -70,11 +70,11 @@ export const IconItem = styled.li`
     &:last-child{
         margin: 0 auto;
         height: 72px;
-        @media screen and (max-width: 1040px){
+        @media screen and (max-width: 1240px){
             display: none;
         }
     }
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1240px) {
         margin-top: 0;
         padding: 0.3rem 0.3rem;
         height: 48px;
@@ -84,6 +84,7 @@ export const IconItem = styled.li`
         background: ${(props) => props.theme.navMobile};
         border-radius: 50% 50%;
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.62);
+
         &:active{
             -webkit-animation: zoom .6s forwards ease-in-out;
             -moz-animation: zoom .6s forwards ease-in-out;
