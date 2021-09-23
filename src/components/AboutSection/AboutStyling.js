@@ -50,7 +50,7 @@ export const Paragraph = styled.p`
     margin-bottom: 2.5%;
     @media screen and (max-width: 768px){
         margin-top: 2.5%;
-        margin-bottom: 2.5%;
+        margin-bottom: 5%;
     }
 `
 export const InfoWrapper = styled.div`
@@ -72,29 +72,31 @@ export const Row2 = styled.div`
     border-top: 1px solid ${(props) => props.theme.accentColor};
     border-left: 1px solid ${(props) => props.theme.accentColor};
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 100%;
     align-items: stretch;
     @media screen and (max-width: 768px){
-        border-left: none
+        border-left: none;
+        padding-top: 5%;
     }
 `
 export const Col3 = styled.div`
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 1 / 1;
     @media screen and (max-width: 768px){
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
         grid-row: 1 / 1;
     }
 `
 export const IntrestsList = styled.ul`
     color: ${(props) => props.theme.accentColor};
     width: 100%;
-    padding-top: 2.5%;
+    padding-top: 1.25%;
 `
 export const IntrestItem = styled.li`
     display: inline-block;
     padding-left: 0;
     margin-right: 2%;
+    font-size: 14px;
 `
 export const ImgWrap = styled.div`
     max-width: 300px;

@@ -44,11 +44,11 @@ export const Content = styled.div`
         opacity: 0;
         max-width: 900px;
         margin-top: 1%;
-        -webkit-animation: section-slide-up .6s forwards 6.4s ease-in-out;
-        -moz-animation: section-slide-up .6s forwards 6.4s ease-in-out;
-        -ms-animation: section-slide-up .6s forwards 6.4s ease-in-out;
-        -o-animation: section-slide-up .6s forwards 6.4s ease-in-out;
-        animation: section-slide-up .6s forwards 6.4s ease-in-out;
+        -webkit-animation: section-slide-up .6s forwards 5.9s ease-in-out;
+        -moz-animation: section-slide-up .6s forwards 5.9s ease-in-out;
+        -ms-animation: section-slide-up .6s forwards 5.9s ease-in-out;
+        -o-animation: section-slide-up .6s forwards 5.9s ease-in-out;
+        animation: section-slide-up .6s forwards 5.9s ease-in-out;
         @media screen and (max-width: 768px){
             padding-top: 0;
             max-width: 300px;
