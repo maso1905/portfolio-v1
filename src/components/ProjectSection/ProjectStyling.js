@@ -20,6 +20,7 @@ export const ContentWrapper = styled.div`
     width: 100%;
     height: 100%;
     justify-content: center;
+    z-index: 1;
 `
 export const ProjectWrapper = styled.div`
     margin: 0 auto;
@@ -60,6 +61,9 @@ export const ProjectCard = styled.a`
         transform: scale(1.02);
         border: .5px solid ${(props) => props.theme.accentColor};
         color: ${(props) => props.theme.fontColor};
+        img{
+            opacity: 1;
+        }
     }
     @media screen and (max-width: 1000px){
         &:active{
@@ -82,19 +86,17 @@ export const ProjectCard = styled.a`
     }
    
 `
-export const ImgContainer = styled.div`
-    position: relative;
-    opacity: 0.4;
-    &:hover {
-        opacity: 1;
-    }
-`
 export const ProjectImage = styled.img`
     width: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     display: block;
     transition: .5s ease;
+    opacity: 0.7;
+
+    @media screen and (max-width: 1000px){
+        opacity: 1;
+    }
 `
 export const ProjectH3 = styled.h3`
     padding: 5% 5% 0 5%;

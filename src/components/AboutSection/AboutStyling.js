@@ -25,12 +25,16 @@ export const ContentWrapper = styled.div`
         max-width: 700px;
     }
 `
-export const Row = styled.div`
+export const Row1 = styled.div`
+    border-top: 1px solid ${(props) => props.theme.accentColor};
+    border-left: 1px solid ${(props) => props.theme.accentColor};
+    border-top-left-radius: 6px;
     display: grid;
     grid-template-columns: 65% 35%;
     align-items: stretch;
     @media screen and (max-width: 768px){
-        border-top: 1px solid ${(props) => props.theme.accentColor};
+        border-radius: 0;
+        border-left: none
     }
 `
 export const Col1 = styled.div`
@@ -40,22 +44,21 @@ export const Col1 = styled.div`
         grid-column: 1 / 3;
         grid-row: 2 / 2;
     }
-    
 `
 export const Paragraph = styled.p`
+    margin-top: 5%;
     margin-bottom: 2.5%;
-`
-export const InfoWrapper = styled.div`
-    border-top: 1px solid ${(props) => props.theme.accentColor};
-    border-left: 1px solid ${(props) => props.theme.accentColor};
-    border-top-left-radius: 6px;
-    padding: 5% 0 5% 5%;
     @media screen and (max-width: 768px){
-        padding: 2%;
-        border: none;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
     }
 `
-
+export const InfoWrapper = styled.div`
+    padding: 0 0 5% 5%;
+    @media screen and (max-width: 768px){
+        padding: 0;
+    }
+`
 export const Col2 = styled.div`
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -64,11 +67,41 @@ export const Col2 = styled.div`
         grid-row: 1 / 2;
     }
 `
+export const Row2 = styled.div`
+    padding-top: 2.5%;
+    border-top: 1px solid ${(props) => props.theme.accentColor};
+    border-left: 1px solid ${(props) => props.theme.accentColor};
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: stretch;
+    @media screen and (max-width: 768px){
+        border-left: none
+    }
+`
+export const Col3 = styled.div`
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    @media screen and (max-width: 768px){
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+    }
+`
+export const IntrestsList = styled.ul`
+    color: ${(props) => props.theme.accentColor};
+    width: 100%;
+    padding-top: 2.5%;
+`
+export const IntrestItem = styled.li`
+    display: inline-block;
+    padding-left: 0;
+    margin-right: 2%;
+`
 export const ImgWrap = styled.div`
     max-width: 300px;
     height: auto;
     display: block;
     float: right;
+    padding-top: 10%;
     @media screen and (max-width: 768px){
         max-width: 150px;
         float: none;

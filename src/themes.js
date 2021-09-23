@@ -84,7 +84,7 @@ export const GlobalStyle = createGlobalStyle`
         h2{ font-size: 30px; }
         h3{ font-size: 18px;}
         p, 
-        a{ font-size: 14px;}
+        a{ font-size: 15px;}
     }
     /* Y-Scrollbar */
     body::-webkit-scrollbar {

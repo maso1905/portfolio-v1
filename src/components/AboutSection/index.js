@@ -2,13 +2,17 @@ import React, {useEffect} from 'react'
 import {
     Section,
     ContentWrapper,
-    Row,
+    Row1,
+    Row2,
     ImgWrap,
     Img,
     Col1,
     Col2,
+    Col3,
     InfoWrapper,
-    Paragraph
+    Paragraph,
+    IntrestsList,
+    IntrestItem
 } from './AboutStyling';
 import "aos/dist/aos.css";
 import Aos from 'aos';
@@ -24,7 +28,7 @@ useEffect(() => {
         <Section id="about">
             <ContentWrapper data-aos-mirror="true" data-aos-once="false" data-aos="fade-left">   
                 <h2>About</h2>
-                <Row>
+                <Row1>
                     <Col1>
                         <InfoWrapper>
                             <Paragraph>{p1}</Paragraph>
@@ -36,7 +40,20 @@ useEffect(() => {
                             <Img src={img} alt={alt}/>
                         </ImgWrap>
                     </Col2>
-                </Row>  
+                </Row1>  
+                <Row2>
+                    <Col3>
+                        <InfoWrapper>
+                            <h3>Current intrests:</h3>
+                            <IntrestsList>
+                                <IntrestItem>ReactJS</IntrestItem>
+                                <IntrestItem>C#</IntrestItem>
+                                <IntrestItem>Animations</IntrestItem>
+                                <IntrestItem>Game Development</IntrestItem>
+                            </IntrestsList>
+                        </InfoWrapper>
+                    </Col3>
+                </Row2>
             </ContentWrapper>
         </Section>
     );

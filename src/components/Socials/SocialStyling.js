@@ -7,7 +7,6 @@ export const Wrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
     position: fixed;
@@ -16,6 +15,7 @@ export const Wrap = styled.div`
     @media screen and (max-width: 1240px) {
         width: 20%;
         right: 0;
+        z-index: 1;
     }
 `
 export const Content = styled.div`

@@ -1,9 +1,9 @@
 export const Prj1 = {
-    url: "https://maso1905.github.io/portfolio-v1/",
+    url: "https://github.com/maso1905/portfolio-v1/tree/master",
     img: require('../../images/reactportfolio.png').default,
     alt: 'Screenshot of ReactJS Portfolio Project',
     title: 'ReactJS Portfolio',
-    desc: 'Without getting too inception about things, I want to present this website you´re currently on, as it is my first official ReactJS project. I used Styled Components for styling CSS and Lottie files together with After Effects for animations.',
+    desc: 'Without getting too inception about things, I want to present this website you´re currently on, as it is my first official ReactJS project. I used ReactJS and Styled Components for styling CSS and Lottie files together with After Effects for animations.',
     techItem1: 'ReactJS',
     techItem2: 'JavaScript',
     techItem4: 'After Effects'
@@ -14,7 +14,7 @@ export const Prj2 = {
     img: require('../../images/ofmScr.png').default,
     alt: 'Screenshot of Operation Full Moon Project',
     title: 'Operation Full Moon',
-    desc: 'My first 3D game project with Unity. The projects was a part of a weekly challenge by the indie game developer David Whele`s and his course Game Dev Unlocked.',
+    desc: 'My first 3D game project with Unity. The projects was a part of a weekly challenge by the indie game developer David Whele and his course Game Dev Unlocked.',
     techItem1: 'Unity',
     techItem2: 'C#',
     techItem3: 'PlayMaker'
