@@ -37,7 +37,7 @@ export const Prj4 = {
     img: require('../../images/wpportfolio.png').default,
     alt: 'Screenshot of WordPress Portfolio Project',
     title: 'WordPress Portfolio',
-    desc: 'This is a WordPress theme I made with the purpose of having a dedicated school-work portfolio. Here you can find some more of my work from school.',
+    desc: 'This is a WordPress theme I made with the purpose of having a dedicated school-work portfolio. It´s not my prettiest work of code but I´m proud of it because it was my first personal, public domain and server set up outside school. Here you can find some more of my school projects.',
     techItem1: 'WordPress',
     techItem2: 'PHP'
 };
