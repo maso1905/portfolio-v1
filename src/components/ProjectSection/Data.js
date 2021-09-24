@@ -33,7 +33,7 @@ export const Prj3 = {
 };
 
 export const Prj4 = {
-    url: "https://malinsoderlund.com/",
+    url: "https://portfoliowordpress.malinsoderlund.com/blog/",
     img: require('../../images/wpportfolio.png').default,
     alt: 'Screenshot of WordPress Portfolio Project',
     title: 'WordPress Portfolio',
