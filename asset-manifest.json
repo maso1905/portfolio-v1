@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.js": "/portfolio-v1/static/js/main.07a15ffc.chunk.js",
-    "main.js.map": "/portfolio-v1/static/js/main.07a15ffc.chunk.js.map",
-    "runtime-main.js": "/portfolio-v1/static/js/runtime-main.5ec381be.js",
-    "runtime-main.js.map": "/portfolio-v1/static/js/runtime-main.5ec381be.js.map",
-    "static/css/2.62df0a30.chunk.css": "/portfolio-v1/static/css/2.62df0a30.chunk.css",
-    "static/js/2.d6675569.chunk.js": "/portfolio-v1/static/js/2.d6675569.chunk.js",
-    "static/js/2.d6675569.chunk.js.map": "/portfolio-v1/static/js/2.d6675569.chunk.js.map",
-    "index.html": "/portfolio-v1/index.html",
-    "static/css/2.62df0a30.chunk.css.map": "/portfolio-v1/static/css/2.62df0a30.chunk.css.map",
-    "static/js/2.d6675569.chunk.js.LICENSE.txt": "/portfolio-v1/static/js/2.d6675569.chunk.js.LICENSE.txt",
-    "static/media/ofmScr.png": "/portfolio-v1/static/media/ofmScr.b5448dc4.png",
-    "static/media/portrait.jpg": "/portfolio-v1/static/media/portrait.fa61fbe9.jpg",
-    "static/media/reactportfolio.png": "/portfolio-v1/static/media/reactportfolio.6375c3d9.png",
-    "static/media/resume.d1114825.pdf": "/portfolio-v1/static/media/resume.d1114825.pdf",
-    "static/media/srradio.png": "/portfolio-v1/static/media/srradio.34200d63.png",
-    "static/media/thegamecorner.png": "/portfolio-v1/static/media/thegamecorner.62ec9f9a.png",
-    "static/media/thesisproject.png": "/portfolio-v1/static/media/thesisproject.473c7e17.png",
-    "static/media/wpportfolio.png": "/portfolio-v1/static/media/wpportfolio.48cb8721.png"
+    "main.js": "/static/js/main.aba92eff.chunk.js",
+    "main.js.map": "/static/js/main.aba92eff.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9040f5fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9040f5fb.js.map",
+    "static/css/2.62df0a30.chunk.css": "/static/css/2.62df0a30.chunk.css",
+    "static/js/2.890a069c.chunk.js": "/static/js/2.890a069c.chunk.js",
+    "static/js/2.890a069c.chunk.js.map": "/static/js/2.890a069c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.62df0a30.chunk.css.map": "/static/css/2.62df0a30.chunk.css.map",
+    "static/js/2.890a069c.chunk.js.LICENSE.txt": "/static/js/2.890a069c.chunk.js.LICENSE.txt",
+    "static/media/ofmScr.png": "/static/media/ofmScr.b5448dc4.png",
+    "static/media/portrait.jpg": "/static/media/portrait.fa61fbe9.jpg",
+    "static/media/reactportfolio.png": "/static/media/reactportfolio.6375c3d9.png",
+    "static/media/resume.d1114825.pdf": "/static/media/resume.d1114825.pdf",
+    "static/media/srradio.png": "/static/media/srradio.34200d63.png",
+    "static/media/thegamecorner.png": "/static/media/thegamecorner.62ec9f9a.png",
+    "static/media/thesisproject.png": "/static/media/thesisproject.473c7e17.png",
+    "static/media/wpportfolio.png": "/static/media/wpportfolio.48cb8721.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5ec381be.js",
+    "static/js/runtime-main.9040f5fb.js",
     "static/css/2.62df0a30.chunk.css",
-    "static/js/2.d6675569.chunk.js",
-    "static/js/main.07a15ffc.chunk.js"
+    "static/js/2.890a069c.chunk.js",
+    "static/js/main.aba92eff.chunk.js"
   ]
 }
