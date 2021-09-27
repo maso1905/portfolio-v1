@@ -42,10 +42,10 @@ export const Prj4 = {
     img: require('../../images/wpportfolio.png').default,
     alt: 'Screenshot of WordPress Portfolio Project',
     title: 'WordPress Portfolio',
-    desc: 'This is a WordPress theme I made with the purpose of having a dedicated school-work portfolio. It´s not my prettiest work of code but I´m proud of it because it was my first personal, public domain and server set up outside school. Here you can find some more of my school projects.',
+    desc: 'This is a WordPress theme I made with the purpose of having a dedicated school-work portfolio. It´s not my prettiest work of code but I´m proud of it because it was my first personal, public domain and server setup outside school. Here you can find some more of my school projects.',
     techItem1: 'WordPress',
     techItem2: 'PHP',
-    github: ''
+    github: 'https://github.com/maso1905/wordpressPortfolio'
 };
 
 export const Prj5 = {
@@ -53,7 +53,7 @@ export const Prj5 = {
     img: require('../../images/thegamecorner.png').default,
     alt: 'Screenshot of The Game Corner Project',
     title: 'The Game Corner',
-    desc: 'The project is a .NET Entity Framework web application with CRUD functionality. It was initially published with free trial on Azure. You can create a safe and encrypted login account and upload/edit/delete images.',
+    desc: 'The project is a ASP.NET Core Entity Framework web application with CRUD functionality. It was initially published with free trial on Azure. You can create a safe and encrypted login account and upload/edit/delete images.',
     techItem1: 'C#',
     techItem2: 'ASP.NET Core',
     techItem3: 'Azure',

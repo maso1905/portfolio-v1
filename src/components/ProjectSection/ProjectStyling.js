@@ -142,7 +142,7 @@ export const GithubLink = styled.a`
     position: absolute;
     right: 0;
     cursor: pointer;
-    padding-right: 2.5%;
+    padding-right: 5%;
     color: ${(props) => props.theme.accentColor};
 `
 export const Github = styled(FiGithub)`
