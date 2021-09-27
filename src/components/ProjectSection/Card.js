@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {
     ProjectCard,
     ProjectLink,
@@ -28,6 +28,9 @@ const Card = ({url, img, alt, title, desc, github, techItem1, techItem2, techIte
                 {techItems.map((techItem)=>{
                     return <TechItem>{techItem}</TechItem>
                 })}
+                <GithubLink class="githubLink" href={github} target="_blank" aria-label="Github Link" role="img" rel="noreferrer">
+                    <Github />
+                </GithubLink>
             </ProjectTech>                           
         </ProjectCard>
     )

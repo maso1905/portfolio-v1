@@ -1,3 +1,5 @@
+import { FiGithub } from "react-icons/fi";
+
 export const Prj1 = {
     url: "https://malinsoderlund.com",
     img: require('../../images/reactportfolio.png').default,
@@ -51,10 +53,11 @@ export const Prj5 = {
     img: require('../../images/thegamecorner.png').default,
     alt: 'Screenshot of The Game Corner Project',
     title: 'The Game Corner',
-    desc: 'This was the final examination of the ASP.NET CORE WITH C# course. The project is a .NET Entity Framework web application with CRUD functionality.',
+    desc: 'The project is a .NET Entity Framework web application with CRUD functionality. It was initially published with free trial on Azure. You can create a safe and encrypted login account and upload/edit/delete images.',
     techItem1: 'C#',
     techItem2: 'ASP.NET Core',
-    github: 'https://github.com/maso1905/the_game_corner'
+    techItem3: 'Azure',
+    github: 'https://github.com/maso1905/theGameCorner'
 };
 
 export const Prj6 = {
