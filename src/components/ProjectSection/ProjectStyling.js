@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { MdOpenInNew } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
 
 export const Section = styled.section`
     display: flex;
@@ -39,7 +41,7 @@ export const ProjectWrapper = styled.div`
         grid-template-columns: 1fr;
     }
 `
-export const ProjectCard = styled.a`
+export const ProjectCard = styled.div`
     background-color: ${(props) => props.theme.cardColor};
     flex-direction: column;
     justify-content: center;
@@ -48,7 +50,6 @@ export const ProjectCard = styled.a`
     justify-content: stretch;
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.32);
     transition: all .2s ease-in-out;
-    cursor: pointer;
     height: 27rem;
     line-height: 1.3;
     position: relative;
@@ -86,6 +87,26 @@ export const ProjectCard = styled.a`
     }
    
 `
+
+export const ProjectLink = styled.a`
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2.5%;
+    margin-right: 2.5%;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    height: 30px;
+    border-radius: 6px;
+    background-color: ${(props) => props.theme.body};
+    color: ${(props) => props.theme.accentColor};
+    opacity: 1;
+    z-index: 2;
+`
+export const OpenTabIcon = styled(MdOpenInNew)`
+    font-size: 30px;    
+`
 export const ProjectImage = styled.img`
     width: 100%;
     border-top-left-radius: 6px;
@@ -116,5 +137,15 @@ export const TechItem = styled.li`
     padding: 2%;
     font-size: 14px;
     padding-left: 0;
+`
+export const GithubLink = styled.a`
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding-right: 2.5%;
+    color: ${(props) => props.theme.accentColor};
+`
+export const Github = styled(FiGithub)`
+    font-size: 24px;
 `
 

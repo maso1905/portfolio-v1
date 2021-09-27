@@ -46,7 +46,7 @@ useEffect(() => {
                         <InfoWrapper>
                             <h3>Current intrests:</h3>
                             <IntrestsList>
-                                <IntrestItem>ReactJS</IntrestItem>
+                                <IntrestItem>React</IntrestItem>
                                 <IntrestItem>C#</IntrestItem>
                                 <IntrestItem>Animations</IntrestItem>
                                 <IntrestItem>Game Development</IntrestItem>

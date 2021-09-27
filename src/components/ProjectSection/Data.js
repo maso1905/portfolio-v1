@@ -1,12 +1,13 @@
 export const Prj1 = {
-    url: "https://github.com/maso1905/portfolio-v1/tree/master",
+    url: "https://malinsoderlund.com",
     img: require('../../images/reactportfolio.png').default,
     alt: 'Screenshot of ReactJS Portfolio Project',
-    title: 'ReactJS Portfolio',
-    desc: 'Without getting too inception about things, I want to present this website you´re currently on, as it is my first official ReactJS project. I used ReactJS and Styled Components for styling CSS and Lottie files together with After Effects for animations.',
+    title: 'React Portfolio',
+    desc: 'Without getting too inception about things, I want to present this website you´re currently on, as it is my first official ReactJS project. I used Styled Components for styling CSS and Lottie files together with After Effects for animations.',
     techItem1: 'ReactJS',
     techItem2: 'JavaScript',
-    techItem4: 'After Effects'
+    techItem4: 'After Effects',
+    github: 'https://github.com/maso1905/portfolio-v1'
 };
 
 export const Prj2 = {
@@ -17,7 +18,8 @@ export const Prj2 = {
     desc: 'My first 3D game project with Unity. The projects was a part of a weekly challenge by the indie game developer David Whele and his course Game Dev Unlocked.',
     techItem1: 'Unity',
     techItem2: 'C#',
-    techItem3: 'PlayMaker'
+    techItem3: 'PlayMaker',
+    github: ''
 };
 
 export const Prj3 = {
@@ -29,7 +31,8 @@ export const Prj3 = {
     techItem1: 'Blazor',
     techItem2: 'C#',
     techItem3: 'Bootstrap',
-    techItem4: 'Docker'
+    techItem4: 'Docker',
+    github: ''
 };
 
 export const Prj4 = {
@@ -39,7 +42,8 @@ export const Prj4 = {
     title: 'WordPress Portfolio',
     desc: 'This is a WordPress theme I made with the purpose of having a dedicated school-work portfolio. It´s not my prettiest work of code but I´m proud of it because it was my first personal, public domain and server set up outside school. Here you can find some more of my school projects.',
     techItem1: 'WordPress',
-    techItem2: 'PHP'
+    techItem2: 'PHP',
+    github: ''
 };
 
 export const Prj5 = {
@@ -50,6 +54,7 @@ export const Prj5 = {
     desc: 'This was the final examination of the ASP.NET CORE WITH C# course. The project is a .NET Entity Framework web application with CRUD functionality.',
     techItem1: 'C#',
     techItem2: 'ASP.NET Core',
+    github: 'https://github.com/maso1905/the_game_corner'
 };
 
 export const Prj6 = {
@@ -57,11 +62,12 @@ export const Prj6 = {
     img: require('../../images/srradio.png').default,
     alt: 'Screenshot of Swedish Radio Open API Project',
     title: 'Swedish Radio Open API',
-    desc: 'A tableu web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON.',
+    desc: 'A tableu REST web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON.',
     techItem1: 'JavaScript',
     techItem2: 'AJAX',
     techItem3: 'API',
-    techItem4: 'JSON'
+    techItem4: 'JSON',
+    github: ''
 };
 
 export const Prj7 = {
@@ -72,5 +78,6 @@ export const Prj7 = {
     desc: 'My second game is going to be a 2D game which I´m currently working on.',
     techItem1: 'Unity',
     techItem2: 'C#',
-    techItem3: 'Adobe Photoshop'
+    techItem3: 'Adobe Photoshop',
+    github: ''
 };
