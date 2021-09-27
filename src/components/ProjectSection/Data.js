@@ -65,12 +65,12 @@ export const Prj6 = {
     img: require('../../images/srradio.png').default,
     alt: 'Screenshot of Swedish Radio Open API Project',
     title: 'Swedish Radio Open API',
-    desc: 'A tableu REST web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON.',
+    desc: 'A tableu web application made with the open API of the Swedish Radio. The purpose of the project was to only use JavaScript. I used AJAX in order to format the desired API’s URL to JSON.',
     techItem1: 'JavaScript',
     techItem2: 'AJAX',
     techItem3: 'API',
     techItem4: 'JSON',
-    github: ''
+    github: 'https://github.com/maso1905/projectSR'
 };
 
 export const Prj7 = {
