@@ -1,4 +1,4 @@
-![Screenshot of Portfolio](https://malinsoderlund.com/images/reactportfolio.png)
+![Screenshot of Portfolio](portfolio-v1/src/images/reactportfolio.png)
 
 # Getting Started with Create React App
 
