@@ -45,7 +45,7 @@ const AboutSection = ({img, alt, p1, intrest1, intrest2, intrest3, intrest4}) =>
                 <Row2>
                     <Col3>
                         <InfoWrapper>
-                            <h3>Current intrests:</h3>
+                            <h3>Current interests:</h3>
                             <IntrestsList>
                                 {intrests.map((intrestItem)=>{
                                     return  <IntrestItem>{intrestItem}</IntrestItem>
