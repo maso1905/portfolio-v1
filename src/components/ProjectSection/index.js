@@ -9,7 +9,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "aos/dist/aos.css";
 import Aos from 'aos';
 import Card from './Card';
-import { Prj1, Prj2, Prj3, Prj4, Prj5, Prj6, Prj7 } from './Data';
+import { Prj1, Prj2, Prj3, Prj4, Prj5, Prj6, Prj7, Prj8 } from './Data';
 
 const ProjectSection = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -42,6 +42,7 @@ const ProjectSection = () => {
                     <TabPanel>
                         <ProjectWrapper>
                             <Card {...Prj7}/>
+                            <Card {...Prj8}/>
                         </ProjectWrapper>
                     </TabPanel>
                 </Tabs>  

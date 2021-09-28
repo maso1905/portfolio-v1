@@ -74,9 +74,20 @@ export const Prj6 = {
 export const Prj7 = {
     url: '',
     img: require('../../images/ofmScr.png').default,
+    alt: 'Screenshot of 3D Game Project',
+    title: 'Operation Full Moon - Full Game',
+    desc: 'After the release on Itch.io and the great response, I have the ambition to continue develop it into a full game. But this time I will convert from Playmaker into C#',
+    techItem1: 'Unity',
+    techItem2: 'C#',
+    github: ''
+};
+
+export const Prj8 = {
+    url: '',
+    img: require('../../images/2dgame.png').default,
     alt: 'Screenshot of 2D Game Project',
     title: '2D Game',
-    desc: 'My second game is going to be a 2D game which I´m currently working on.',
+    desc: 'I´m in the process of creating a 2D game with the purpose of deepen my knowledge in Adobe Photoshop and animations.',
     techItem1: 'Unity',
     techItem2: 'C#',
     techItem3: 'Adobe Photoshop',

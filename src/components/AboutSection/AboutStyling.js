@@ -47,7 +47,6 @@ export const Col1 = styled.div`
 `
 export const Paragraph = styled.p`
     margin-top: 5%;
-    margin-bottom: 2.5%;
     @media screen and (max-width: 768px){
         margin-top: 2.5%;
         margin-bottom: 5%;
