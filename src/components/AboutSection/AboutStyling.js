@@ -103,12 +103,14 @@ export const ImgWrap = styled.div`
     display: block;
     float: right;
     padding-top: 10%;
+    padding-bottom: 10%;
     @media screen and (max-width: 768px){
         max-width: 150px;
         float: none;
         margin-right: auto;
         margin-left: auto;
         padding-top: 5%;
+        padding-bottom: 0;
     }
 `
 export const Img = styled.img`
