@@ -64,9 +64,65 @@ export const GlobalStyle = createGlobalStyle`
     a:hover{ color: ${(props) => props.theme.accentColor}; }
     span{ color: ${(props) => props.theme.accentColor}; }
 
-    /* Tabs styling props */
-    .react-tabs{ border-color: ${(props) => props.theme.accentColor} !important; }
-    .react-tabs__tab--selected{ border-bottom-color: ${(props) => props.theme.accentColor} !important; }
+    /* Tabs styling */
+    .react-tabs {
+        border-color: ${(props) => props.theme.accentColor} !important;
+        border-top: 1px solid;
+        border-right: 1px solid; 
+        border-top-right-radius: 6px;
+        border-bottom: none;
+    }
+    @media screen and (max-width: 768px){
+        .react-tabs {
+            border-top: 1px solid;
+            border-right: none;
+            border-top-right-radius: 0;
+        }
+        .react-tabs__tab-list {
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .react-tabs__tab-list {
+        border-top-right-radius: 6px;
+        margin: 0 0 10px;
+        padding: 1.25%;  
+        border: none;
+    }
+    .react-tabs__tab {
+        border: none;
+    }
+    .react-tabs__tab--selected {
+        border-bottom: 1px solid ${(props) => props.theme.accentColor} !important;
+        border-radius: 6px 6px 0 0;
+        background: none;
+        color: ${(props) => props.theme.fontColor};
+    }
+    .react-tabs__tab:focus {
+        box-shadow: none;
+        border-radius: 6px 6px 0 0;
+        border: 1px solid ${(props) => props.theme.accentColor};        
+    }
+    .react-tabs__tab:focus:after {
+        background: none;
+    }
+    
+    /* Y-Scrollbar */
+    body::-webkit-scrollbar {
+        width: 6px;
+    }
+    body::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background: ${(props) => props.theme.body};
+    }
+    body::-webkit-scrollbar-thumb {
+        background: ${(props) => props.theme.scrollThumbColor};
+        border-radius: 6px;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+        background: ${(props) => props.theme.scrollThumbHover};
+    }
 
     /* Mobile */
     @media screen and (max-width: 375px) and (min-width: 280px){
@@ -85,20 +141,5 @@ export const GlobalStyle = createGlobalStyle`
         h3{ font-size: 18px;}
         p, 
         a{ font-size: 15px;}
-    }
-    /* Y-Scrollbar */
-    body::-webkit-scrollbar {
-        width: 6px;
-    }
-    body::-webkit-scrollbar-track {
-        border-radius: 4px;
-        background: ${(props) => props.theme.body};
-    }
-    body::-webkit-scrollbar-thumb {
-        background: ${(props) => props.theme.scrollThumbColor};
-        border-radius: 6px;
-    }
-    body::-webkit-scrollbar-thumb:hover {
-        background: ${(props) => props.theme.scrollThumbHover};
     }
 `;

@@ -10,6 +10,11 @@ import {
     Github
 } from './FooterStyling';
 const Footer = () => {
+
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+      };
+
     return (
         <>
             <Nav>
@@ -34,7 +39,7 @@ const Footer = () => {
                             </IconItem>
                         </SocialIcons>
                     </SocialWrapper>
-                    <p>	&#169; 2021 by Malin S&ouml;derlund</p>
+                    <p>	&#169; {getCurrentYear()} by Malin S&ouml;derlund</p>
                </NavContainer>
            </Nav>
         </>

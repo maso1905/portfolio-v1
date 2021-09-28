@@ -72,7 +72,7 @@ export const Row2 = styled.div`
     border-top: 1px solid ${(props) => props.theme.accentColor};
     border-left: 1px solid ${(props) => props.theme.accentColor};
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 65%;
     align-items: stretch;
     @media screen and (max-width: 768px){
         border-left: none;
@@ -80,7 +80,7 @@ export const Row2 = styled.div`
     }
 `
 export const Col3 = styled.div`
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 1;
     @media screen and (max-width: 768px){
         grid-column: 1 / 3;

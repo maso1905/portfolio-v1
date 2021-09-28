@@ -17,12 +17,14 @@ import {
 import "aos/dist/aos.css";
 import Aos from 'aos';
 
-const AboutSection = ({img, alt, p1, p2}) => {
-useEffect(() => {
-    Aos.init({
-        duration: 1000
-    });
-}, []);
+const AboutSection = ({img, alt, p1, p2, intrest1, intrest2, intrest3, intrest4}) => {
+    const intrests = [intrest1, intrest2, intrest3, intrest4];
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000
+        });
+    }, []);
 
     return (
         <Section id="about">
@@ -46,10 +48,9 @@ useEffect(() => {
                         <InfoWrapper>
                             <h3>Current intrests:</h3>
                             <IntrestsList>
-                                <IntrestItem>React</IntrestItem>
-                                <IntrestItem>C#</IntrestItem>
-                                <IntrestItem>Animations</IntrestItem>
-                                <IntrestItem>Game Development</IntrestItem>
+                                {intrests.map((intrestItem)=>{
+                                    return  <IntrestItem>{intrestItem}</IntrestItem>
+                                })}
                             </IntrestsList>
                         </InfoWrapper>
                     </Col3>

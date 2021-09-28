@@ -27,7 +27,7 @@ const ProjectSection = () => {
                 <Tabs selectedIndex={tabIndex} onSelect={index => setTabIndex(index)}>
                     <TabList>
                         <Tab tabIndex="0">Featured</Tab>
-                        <Tab tabIndex="0">In Progress</Tab>
+                        <Tab tabIndex="0">Plans</Tab>
                     </TabList>
                     <TabPanel>
                         <ProjectWrapper>

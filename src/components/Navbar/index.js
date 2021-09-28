@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { AiOutlineDownload as Download} from "react-icons/ai";
 import { ImHome as Home } from 'react-icons/im';
-//import {animateScroll as scroll} from 'react-scroll';
 import PDF from "../../images/resume.pdf";
 import CustomLogo from './CustomLogo';
 import { 
@@ -30,7 +29,6 @@ const Navbar = ({toggle, themeToggler}) => {
             setScrollNav(false)
         }
     };
-
     const toggleHome = () => {  
         window.location.reload(false);
     };

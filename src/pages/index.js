@@ -20,7 +20,7 @@ const Home = ({themeToggler}) => {
             <IntroSection />
             <AboutSection {...ObjOne}/>
             <ProjectSection />
-            <ContactSection {...ObjOne}/>
+            <ContactSection />
             <Footer />
         </>
     );
