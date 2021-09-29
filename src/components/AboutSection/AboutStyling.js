@@ -40,6 +40,9 @@ export const Row1 = styled.div`
 export const Col1 = styled.div`
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     @media screen and (max-width: 768px){
         grid-column: 1 / 3;
         grid-row: 2 / 2;
@@ -47,6 +50,7 @@ export const Col1 = styled.div`
 `
 export const Paragraph = styled.p`
     margin-top: 5%;
+   
     @media screen and (max-width: 768px){
         margin-top: 2.5%;
         margin-bottom: 5%;
@@ -61,6 +65,7 @@ export const InfoWrapper = styled.div`
 export const Col2 = styled.div`
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    height: 100%;
     @media screen and (max-width: 768px){
         grid-column: 1 / 3;
         grid-row: 1 / 2;
