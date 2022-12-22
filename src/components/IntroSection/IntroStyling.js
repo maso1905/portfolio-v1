@@ -16,29 +16,30 @@ export const Content = styled.div`
         padding: 5%;  
     }
     .small-welcome{
+        text-align: center;
         opacity: 0;
         color: ${(props) => props.theme.accentColor};
         -webkit-animation: section-slide-up .6s forwards 1s ease-in-out;
         -moz-animation: section-slide-up .6s forwards 1s ease-in-out;
         -ms-animation: section-slide-up .6s forwards 1s ease-in-out;
         -o-animation: section-slide-up .6s forwards 1s ease-in-out;
-        animation: section-slide-up .6s forwards 1s ease-in-out;
+        animation: section-slide-up .6s forwards 1s ease-in-out, slide-down-text 0.6s forwards 2s ease-out;
     }
     h1{
         opacity: 0;
-        -webkit-animation: section-slide-up .6s forwards 2s ease-in-out;
-        -moz-animation: section-slide-up .6s forwards 2s ease-in-out;
-        -ms-animation: section-slide-up .6s forwards 2s ease-in-out;
-        -o-animation: section-slide-up .6s forwards 2s ease-in-out;
-        animation: section-slide-up .6s forwards 2s ease-in-out;
+        -webkit-animation: section-slide-up .6s forwards 2.6s ease-in-out;
+        -moz-animation: section-slide-up .6s forwards 2.6s ease-in-out;
+        -ms-animation: section-slide-up .6s forwards 2.6s ease-in-out;
+        -o-animation: section-slide-up .6s forwards 2.6s ease-in-out;
+        animation: section-slide-up .6s forwards 2.6s ease-in-out;
     }
     h2{
         opacity: 0;
-        -webkit-animation: section-slide-up .6s forwards 3s ease-in-out;
-        -moz-animation: section-slide-up .6s forwards 3s ease-in-out;
-        -ms-animation: section-slide-up .6s forwards 3s ease-in-out;
-        -o-animation: section-slide-up .6s forwards 3s ease-in-out;
-        animation: section-slide-up .6s forwards 3s ease-in-out;
+        -webkit-animation: section-slide-up .6s forwards 3.6s ease-in-out;
+        -moz-animation: section-slide-up .6s forwards 3.6s ease-in-out;
+        -ms-animation: section-slide-up .6s forwards 3.6s ease-in-out;
+        -o-animation: section-slide-up .6s forwards 3.6s ease-in-out;
+        animation: section-slide-up .6s forwards 3.6s ease-in-out;
     }
     p{
         opacity: 0;
@@ -72,15 +73,33 @@ export const Content = styled.div`
             opacity: 1;
         }
     }
+    @keyframes slide-down-text{
+        from{
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -o-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+        to{
+            -webkit-transform: translateY(20%);
+            -moz-transform: translateY(20%);
+            -o-transform: translateY(20%);
+            -ms-transform: translateY(20%);
+            transform: translateY(20%);
+            opacity: 0;
+        }
+    }
 
     .devAnim{
         display: inline-block;
         transform-origin: bottom left;
-        -webkit-animation: developer-break 1s forwards 4s ease-in-out, developer-fall .4s forwards 5s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
-        -moz-animation: developer-break 1s forwards 4s ease-in-out, developer-fall .4s forwards 5s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
-        -o-animation: developer-break 1s forwards 4s ease-in-out, developer-fall .4s forwards 5s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
-        -ms-animation: developer-break 1s forwards 4s ease-in-out, developer-fall .4s forwards 5s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
-        animation: developer-break 1s forwards 4s ease-in-out, developer-fall .4s forwards 5s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
+        -webkit-animation: developer-break 1s forwards 4.6s ease-in-out, developer-fall .4s forwards 5.4s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
+        -moz-animation: developer-break 1s forwards 4.6s ease-in-out, developer-fall .4s forwards 5.6s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
+        -o-animation: developer-break 1s forwards 4.6s ease-in-out, developer-fall .4s forwards 5.6s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
+        -ms-animation: developer-break 1s forwards 4.6s ease-in-out, developer-fall .4s forwards 5.6s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
+        animation: developer-break 1s forwards 4.6s ease-in-out, developer-fall .4s forwards 5.6s ease-in-out, developer-reemerge .6s forwards 8s ease-in-out;
     }
     @keyframes developer-break{
         0% { 

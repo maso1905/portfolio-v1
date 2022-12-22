@@ -17,7 +17,7 @@ import {
 import "aos/dist/aos.css";
 import Aos from 'aos';
 
-const AboutSection = ({img, alt, p1, intrest1, intrest2, intrest3, intrest4}) => {
+const AboutSection = ({img, alt, p1, p2, intrest1, intrest2, intrest3, intrest4}) => {
     const intrests = [intrest1, intrest2, intrest3, intrest4];
 
     useEffect(() => {
@@ -34,6 +34,7 @@ const AboutSection = ({img, alt, p1, intrest1, intrest2, intrest3, intrest4}) =>
                     <Col1>
                         <InfoWrapper>
                             <Paragraph>{p1}</Paragraph>
+                            <Paragraph>{p2}</Paragraph>
                         </InfoWrapper>
                     </Col1>
                     <Col2>
@@ -43,7 +44,7 @@ const AboutSection = ({img, alt, p1, intrest1, intrest2, intrest3, intrest4}) =>
                     </Col2>
                 </Row1>  
                 <Row2>
-                    <Col3>
+                    {/* <Col3>
                         <InfoWrapper>
                             <h3>Current interests:</h3>
                             <IntrestsList>
@@ -52,7 +53,7 @@ const AboutSection = ({img, alt, p1, intrest1, intrest2, intrest3, intrest4}) =>
                                 })}
                             </IntrestsList>
                         </InfoWrapper>
-                    </Col3>
+                    </Col3> */}
                 </Row2>
             </ContentWrapper>
         </Section>
