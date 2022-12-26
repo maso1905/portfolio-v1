@@ -93,3 +93,14 @@ export const Prj8 = {
     techItem3: 'Adobe Photoshop',
     github: ''
 };
+
+export const Prj9 = {
+    url: 'https://www.figma.com/proto/5CejsyJyXzQ5eW7VmOJi2F/Untitled?node-id=63%3A1451&scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A1451',
+    img: require('../../images/radyarn.png').default,
+    alt: 'Screenshot of Website Mock-up',
+    title: 'RAD! Yarn',
+    desc: 'I´m currently developing a web design for a fictional company. The mock-up is updating regularly and the final product will result as a React app.',
+    techItem1: 'Figma',
+    techItem2: 'React',
+    github: ''
+};
